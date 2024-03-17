@@ -38,7 +38,8 @@ input {
 .header .service-item .btn-lang::after,
 .header .service-item .btn-family::after,
 .header .link-sitemap::before,
-.header .link-site[target="_blank"]::after {
+.header .link-site[target="_blank"]::after,
+.footer .btn-corp::before {
   background-image: url("../images/common/common_sprite.png");
   background-repeat: no-repeat;
   background-size: 500px 200px;
