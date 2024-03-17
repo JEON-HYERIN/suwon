@@ -1,3 +1,19 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-family: 'SCoreDream','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: #555555;
+  letter-spacing: -0.03em;
+}
+
+a,em,span {
+  box-sizing: border-box;
+}
+
 button {
   padding: 0;
   cursor: pointer;
@@ -21,7 +37,7 @@ button {
 
 #skip-nav {
   position: relative;
-  z-index: $z-index--skip-nav;
+  z-index: 100;
 
   a {
     position: absolute;
@@ -32,7 +48,7 @@ button {
     text-align: center;
     font-size: 13px;
     line-height: 26px;
-    color: $color-white;
+    color: #fff;
     white-space: nowrap;
     background-color: #333;
 
@@ -40,4 +56,25 @@ button {
       top: 0;
     }
   }
+}
+
+.common-inner {
+  position: relative;
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.header .service-item .link-login::before,
+.header .service-item .btn-lang::before,
+.header .service-item .btn-lang::after,
+.header .service-item .btn-family::after {
+  background-image: url("../images/common/common_sprite.png");
+  background-repeat: no-repeat;
+  background-size: 500px 200px;
+}
+
+.header .service-item .btn-zoom::before {
+  background-image: url("../images/common/common_icons2.png");
+  background-repeat: no-repeat;
+  background-size: 120px 30px;
 }

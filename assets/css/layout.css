@@ -1,4 +1,218 @@
 @import './reset.css';
 @import './common.css';
+@import './typo.css';
 
+body {
+  min-height: 3000px;
+}
 /* header, footer */
+.header .logo {
+  position: absolute;
+  top: 22px;
+  left: 0;
+}
+.header .logo a {
+  display: block;
+}
+.header .logo a::before {
+  content: '';
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  background: url("../images/common/logo.png") no-repeat;
+  vertical-align: top;
+}
+.header .group-top {
+  height: 50px;
+  border-bottom: 1px solid #d9dfe2;
+}
+.header .group-top .common-inner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.header .group-top .column-left {
+  float: left;
+}
+.header .group-top .column-right {
+  float: right;
+}
+.header .intro-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.header .intro-item {
+  float: left;
+}
+.header .link-intro {
+  display: block;
+  position: relative;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 26px;
+  color: #5a5f6e;
+}
+.header .link-intro:hover {
+  color: #000;
+}
+.header .intro-item + .intro-item .link-intro {
+  margin-left: 10px;
+  padding-left: 13px;
+}
+.header .intro-item + .intro-item .link-intro::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #cdd3d8;
+}
+.header .link-intro em {
+  color: #109cda;
+}
+.header .service-list {
+  padding: 11px 0;
+}
+.header .service-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.header .service-item + .service-item::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 0;
+  width: 1px;
+  height: 19px;
+  background-color: #c0c9cf;
+}
+.header .service-item {
+  float: left;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: #333;
+}
+.header .service-item .link-login {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 18px;
+}
+.header .service-item .link-login:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.header .service-item .link-login::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 0;
+  width: 18px;
+  height: 19px;
+}
+.header .service-item .btn-lang { 
+  position: relative;
+  margin-left: 16px;
+  padding-left: 28px;
+  padding-right: 30px;
+}
+.header .service-item .btn-lang::before {
+  content: '';
+  position: absolute;
+    top: calc(50% - 9px);
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-position: -94px -2px;
+  }
+.header .service-item .btn-lang::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 0;
+  width: 8px;
+  height: 6px;
+  background-position: -95px -41px;
+}
+.header .service-item.zoom {
+  margin-left: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header .service-item.zoom::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.header .service-item.zoom .title {
+  float: left;
+}
+.header .service-item.zoom .btn-area {
+  float: left;
+  margin-top: 3px;
+  margin-left: 15px;
+}
+.header .service-item.zoom .btn-area::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.header .service-item .btn-zoom {
+  position: relative;
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c0c9cf;
+  border-radius: 3px;
+}
+.header .service-item .btn-zoom + .btn-zoom {
+  margin-left: 5px;
+}
+.header .service-item .btn-zoom::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 5px);
+  width: 10px;
+  height: 9px;
+}
+.header .service-item .btn-zoom.in::before {
+  background-position: left top;
+}
+.header .service-item .btn-zoom.out::before {
+  background-position: -30px top;
+}
+.header .service-item .btn-family {
+  position: relative;
+  margin-left: 20px;
+  padding-right: 30px;
+}
+.header .service-item .btn-family::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 0;
+  width: 8px;
+  height: 6px;
+  background-position: -95px -41px;
+}
+.header .group-nav {}
+.header .nav-area {}
+.header .gnb-list {}
+.header .gnb-item {}
+.header .link-gnb {}
+.header .link-gnb .title {}
+.header .lnb-list {}
+.header .lnb-item {}
+.header .link-lnb {}
+.header .link-sitemap {}
+.header .search-area {}
