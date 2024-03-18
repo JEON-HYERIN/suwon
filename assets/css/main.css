@@ -1,5 +1,5 @@
 .group-row1 {
-  padding-top: 70px;
+  margin-top: 70px;
 }
 .group-row1::after {
   content: '';
@@ -408,7 +408,7 @@
 }
 .section-talk .link-talk {
   position: relative;
-  display: block;
+  display: inline-block;
   padding-bottom: 3px;
   text-align: left;
   font-size: 18px;
@@ -454,4 +454,151 @@
 }
 .section-talk .link-talk:hover::after {
   transform: scaleX(1);
+}
+.section-job {
+  margin-top: 75px;
+}
+.section-job .banner {
+  position: relative;
+  margin-bottom: 55px;
+  border-radius: 60px 10px 60px 10px;
+  background-color: #109cda;
+}
+.section-job .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.section-job .gradient::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 80px);
+  left: calc(50% - 303px);
+  width: 752px;
+  height: 160px;
+  background: url("../images/main/job_bg.png") no-repeat center;
+}
+.section-job .banner .title {
+  position: relative;
+  z-index: 1;
+  padding: 27px 0 23px;
+  text-align: center;
+}
+.section-job .banner .text {
+  display: inline-block;
+  letter-spacing: -0.04em;
+  text-shadow: rgba(13, 83, 135, 0.75) 3px 4px 20px;
+  vertical-align: top;
+}
+.section-job .banner .text.basic {
+  position: relative;
+  padding-left: 145px;
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #fff;
+}
+.section-job .banner .text.basic::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 126px;
+  height: 133px;
+  background: url("../images/main/job_icon.png") no-repeat left bottom;
+}
+.section-job .banner .text.highlight {
+  font-family: 'Tenada', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  color: #fff799;
+}
+.section-job .job-list {
+  margin-top: 55px;
+}
+.section-job .job-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.section-job .job-item {
+  float: left;
+  width: calc((100% - 168px) / 3);
+}
+.section-job .link-job {
+  position: relative;
+  display: block;
+  padding-bottom: 51px;
+  color: #000;
+  transition: color 200ms ease-in-out;
+}
+.section-job .link-job:hover {
+  color: #0970bb;
+}
+.section-job .link-job::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(1, 64, 153, 0.5);
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
+}
+.section-job .link-job:hover::before {
+  transform: scaleX(1);
+}
+.section-job .link-job .date-box {
+  display: inline-block;
+  width: 83px;
+  height: 83px;
+  padding: 20px 0 21px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #109cda;
+  border-radius: 50%;
+  border: 1px solid #109cda;
+  vertical-align: middle;
+  box-sizing: border-box;
+  transition-property: border-color, background-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+.section-job .link-job:hover .date-box {
+  border-color: #e9f6fb;
+  background-color: #e9f6fb;
+}
+.section-job .link-job .date-box .text {
+  display: block;
+  line-height: 20px;
+}
+.section-job .link-job .title-box {
+  display: inline-block;
+  width: 304px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+.section-job .link-job .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: keep-all;
+  overflow: hidden;
+  max-height: 56px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.03em;
 }
