@@ -53,14 +53,26 @@ input {
   background-size: 120px 30px;
 }
 
-.header .gnb-item.info .link-lnb::after {
+.header .gnb-item.info .link-lnb::after,
+.section-visual .visual-slide .btn-prev::before,
+.section-visual .visual-slide .btn-next::before {
   background-image: url("../images/common/common_menu_icons.png");
   background-repeat: no-repeat;
   background-size: 740px 150px;
 }
 .header .btn-search::before,
-.header .keyword-area .title::before {
+.header .keyword-area .title::before,
+.section-visual .btn-prev::before,
+.section-visual .btn-control::before,
+.section-visual .btn-next::before,
+.section-visual .btn-more::before {
   background-image: url("../images/main/main_icons.png");
   background-repeat: no-repeat;
   background-size: 300px 180px;
+}
+
+.section-service .link-service::before {
+  background-image: url(../images/main/quick_icons.png);
+  background-repeat: no-repeat;
+  background-size: 88px 23px;
 }
