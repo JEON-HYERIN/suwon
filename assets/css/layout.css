@@ -757,6 +757,7 @@ body {
 }
 .footer .btn-related {
   position: relative;
+  display: block;
   width: 100%;
   padding: 17px 60px 18px 20px;
   text-align: left;
@@ -990,9 +991,6 @@ body {
 }
 .footer .address {
   float: left;
-}
-.footer .address em {
-  font-weight: 600;
 }
 .footer .copyright {
   float: left;

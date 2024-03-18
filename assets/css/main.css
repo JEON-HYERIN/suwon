@@ -25,7 +25,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 18px 30px 50px;
 }
 
-.slick-list {
+.section-visual .slick-list {
   height: 100%;
 }
 .section-visual .visual-slide a {
@@ -334,4 +334,124 @@
   .section-visual .slide-wrapper {
     height: 400px;
   }
+}
+.section-talk {
+  position: relative;
+  margin-top: 63px;
+  background-color: #014099;
+}
+.section-talk .content {
+  padding-left: 258px;
+  padding-right: 62px;
+}
+.section-talk .common-inner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.section-talk .title {
+  position: absolute;
+  top: -28px;
+  left: 73px;
+}
+@media screen and (max-width: 1000px) {
+  .section-talk .title {
+    left: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .section-talk .title {
+    width: 97px;
+  }
+}
+.section-talk .title a {
+  display: block;
+}
+.section-talk .title::before {
+  display: inline-block;
+  width: 122px;
+  height: 123px;
+  background: url("../images/main/talk-logo.png") no-repeat;
+}
+.section-talk .talk-list-wrap {
+  padding: 31px 0 33px;
+}
+.section-talk .talk-list {
+  height: 31px;
+}
+@media screen and (max-width: 640px) {
+  .section-talk .talk-list {
+    height: 23px;
+  }
+  .section-talk .content {
+    /* padding: 22px 0 0 124px; */
+  }
+}
+.section-talk .talk-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.section-talk .talk-item {
+  width: 20%;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .section-talk .talk-item {
+    width: auto;
+  }
+}
+@media screen and (max-width: 640px) {
+  .section-talk .talk-item + .talk-item {
+    margin-left: 25px;
+  }
+}
+.section-talk .link-talk {
+  position: relative;
+  display: block;
+  padding-bottom: 3px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.05em;
+  color: #fff;
+}
+.section-talk .link-talk::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  background: url("../images/main/talk-icons.png") no-repeat;
+  margin-right: 7px;
+  vertical-align: -5px;
+}
+.section-talk .talk-item.meeting .link-talk::before {
+  background-position: left center;
+}
+.section-talk .talk-item.vote .link-talk::before {
+  background-position: -22px center;
+}
+.section-talk .talk-item.receipt .link-talk::before {
+  background-position: -44px center;
+}
+.section-talk .talk-item.service .link-talk::before {
+  background-position: -66px center;
+}
+.section-talk .talk-item.budget .link-talk::before {
+  background-position: -88px center;
+}
+.section-talk .link-talk::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.section-talk .link-talk:hover::after {
+  transform: scaleX(1);
 }

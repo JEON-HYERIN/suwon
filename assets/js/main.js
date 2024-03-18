@@ -81,3 +81,61 @@ visualSlide.on('init reInit afterChange', function(event, slick, currentSlide, n
       slidePaused = true;
     }
   });
+
+  $('.section-talk .talk-list').slick({
+    slidesToShow: 5,
+    infinite: false,
+    arrows: false,
+    swipe:false,
+    draggable:false,
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 1001,
+        settings: {
+        swipe:true,
+        draggable:true,
+        variableWidth: true,
+        swipeToSlide: true
+        }
+      },
+      {
+        breakpoint: 641,
+        settings: {
+        swipe:true,
+        draggable:true,
+        variableWidth: true,
+        swipeToSlide: true
+        }
+      },
+      {
+        breakpoint: 621,
+        settings: {
+        swipe:true,
+        draggable:true,
+        variableWidth: true,
+        swipeToSlide: true,
+        slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 491,
+        settings: {
+        swipe:true,
+        draggable:true,
+        variableWidth: true,
+        swipeToSlide: true,
+        slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 391,
+        settings: {
+        swipe:true,
+        draggable:true,
+        variableWidth: true,
+        swipeToSlide: true,
+        slidesToShow: 2
+        }
+      }]
+  })
