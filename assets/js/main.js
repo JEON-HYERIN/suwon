@@ -181,3 +181,60 @@ visualSlide.on('init reInit afterChange', function(event, slick, currentSlide, n
         }
       }]
   })
+
+  $('.section-news .news-list').slick({
+    autoplay : false,
+      dots:false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      variableWidth: false,
+      infinite: false,
+      arrows: false,
+      pauseOnDotsHover : true,
+      swipe:false,
+      draggable:false,
+      responsive: [
+      {
+        breakpoint: 1001,
+        settings: {
+        swipe:true,
+        draggable:true,
+        swipeToSlide: true,
+        slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 641,
+        settings: {
+        swipe:true,
+        draggable:true,
+        swipeToSlide: true,
+        variableWidth: true,
+        slidesToShow: 2
+        }
+      }]
+  })
+
+  $('.section-news .btn-tab').click(function() {
+    const index = $(this).index();
+
+    $('.news-board').eq(index).addClass('is-visible').siblings().removeClass('is-visible');
+    $(this).addClass('is-active').siblings().removeClass('is-active');
+    $('.section-news .news-list').slick('setPosition');
+  })
+
+  $('.section-event .event-list').slick({
+    prevArrow: $('.section-event .btn-prev'),
+    nextArrow: $('.section-event .btn-next'),
+    pauseOnDotsHover : true,
+    swipe:false,
+    draggable:false,
+    responsive: [
+      {
+        breakpoint: 1001,
+        settings: {
+        swipe:true,
+        draggable:true
+        }
+      }]
+  })
