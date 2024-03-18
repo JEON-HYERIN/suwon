@@ -66,7 +66,8 @@ input {
 .section-visual .btn-control::before,
 .section-visual .btn-next::before,
 .section-visual .btn-more::before,
-.section-news .link-more::before {
+.section-news .link-more::before,
+.section-event .slide-control .btn::before {
   background-image: url("../images/main/main_icons.png");
   background-repeat: no-repeat;
   background-size: 300px 180px;
