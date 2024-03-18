@@ -20,7 +20,7 @@ $('.lnb-list-wrap').on('mouseleave', function(e) {
   $('.gnb-item').removeClass('is-active');
 })
 
-$('.footer .btn-corp').unbind('click').bind('click', function() {
+$('.footer .btn-related').unbind('click').bind('click', function() {
   const index = $(this).parent().index();
 
   if($(this).parent().hasClass('is-active')) {
