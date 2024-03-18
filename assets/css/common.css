@@ -70,9 +70,3 @@ input {
   background-repeat: no-repeat;
   background-size: 300px 180px;
 }
-
-.section-service .link-service::before {
-  background-image: url(../images/main/quick_icons.png);
-  background-repeat: no-repeat;
-  background-size: 88px 23px;
-}

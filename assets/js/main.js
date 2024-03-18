@@ -43,8 +43,8 @@ const visualSlide = $('.section-visual .slide-wrapper');
 visualSlide.slick({
   autoplay : true,
   infinite : true,
-  prevArrow: $('.btn-prev'),
-  nextArrow: $('.btn-next'),
+  prevArrow: $('.section-visual .btn-prev'),
+  nextArrow: $('.section-visual .btn-next'),
   // dots: true,
   // dotsClass: 'page',
   // customPaging: function (slider, i) {
@@ -136,6 +136,48 @@ visualSlide.on('init reInit afterChange', function(event, slick, currentSlide, n
         variableWidth: true,
         swipeToSlide: true,
         slidesToShow: 2
+        }
+      }]
+  })
+
+  $('.section-shortcut .shortcut-list').slick({
+    autoplay : false,
+    dots:false,
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    variableWidth: false,
+    infinite: false,
+    prevArrow: $('.section-shortcut .btn-prev'),
+    nextArrow: $('.section-shortcut .btn-next'),
+    pauseOnDotsHover : true,
+    swipe:false,
+    draggable:false,
+    responsive: [
+      {
+        breakpoint: 1001,
+        settings: {
+        swipe:true,
+        draggable:true,
+        swipeToSlide: true,
+        slidesToShow: 6
+        }
+      },
+      {
+        breakpoint: 641,
+        settings: {
+        swipe:true,
+        draggable:true,
+        swipeToSlide: true,
+        slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 441,
+        settings: {
+        swipe:true,
+        draggable:true,
+        swipeToSlide: true,
+        slidesToShow: 3
         }
       }]
   })

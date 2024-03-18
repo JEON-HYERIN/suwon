@@ -258,7 +258,7 @@
   left: 5px;
   width: 560px;
   height: 53px;
-  background: url("../images/main/quick_bg.png") no-repeat center bottom;
+  background: url("../images/main/service_bg.png") no-repeat center bottom;
 }
 .section-service .service-list::after {
   content: '';
@@ -303,6 +303,7 @@
   left: 7px;
   width: 22px;
   height: 23px;
+  background: url("../images/main/service_icons.png") no-repeat;
 }
 .section-service .service-item.chart .link-service::before {
   background-position: left center;
@@ -531,6 +532,9 @@
   float: left;
   width: calc((100% - 168px) / 3);
 }
+.section-job .job-item  + .job-item {
+  margin-left: 84px;
+}
 .section-job .link-job {
   position: relative;
   display: block;
@@ -601,4 +605,160 @@
   font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.03em;
+}
+.section-shortcut {
+  margin-top: 118px;
+}
+.section-shortcut .slide-area {
+  position: relative;
+  padding: 0 89px;
+}
+.section-shortcut .slide-control .btn {
+  position: absolute;
+  top: 33px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 10px 17px 35px;
+}
+.section-shortcut .slide-control .btn-prev {
+  left: 0;
+}
+.section-shortcut .slide-control .btn-next {
+  right: 0;
+}
+.section-shortcut .slide-control .btn::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 6px);
+  width: 12px;
+  height: 20px;
+  background-image: url(../images/main/main_icons.png);
+  background-repeat: no-repeat;
+}
+.section-shortcut .slide-control .btn-prev::before {
+  background-position: -15px -90px;
+}
+.section-shortcut .slide-control .btn-next::before {
+  background-position: -60px -90px;
+}
+.section-shortcut .link-shortcut {
+  display: block;
+}
+.section-shortcut .link-shortcut .ico-shortcut {
+  display: block;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 14px;
+  border-radius: 30px;
+  transition-property: background-color, box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+.section-shortcut .link-shortcut:hover .ico-shortcut {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 18px 30px 45px;
+}
+.section-shortcut .link-shortcut .ico-shortcut::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 47px;
+  background: url("../images/main/shortcut_icons.png") no-repeat;
+  transform: translateY(7px);
+  transition: transform 200ms ease-in-out;
+}
+.section-shortcut .shortcut-item.chart .ico-shortcut::before {
+  background-position: -672px center;
+}
+.section-shortcut .shortcut-item.info .ico-shortcut::before {
+  background-position: -48px center;
+}
+.section-shortcut .shortcut-item.job .ico-shortcut::before {
+  background-position: -624px center;
+}
+.section-shortcut .shortcut-item.service .ico-shortcut::before {
+  background-position: -672px center;
+}
+.section-shortcut .shortcut-item.car .ico-shortcut::before {
+  background-position: -96px center;
+}
+.section-shortcut .shortcut-item.apply .ico-shortcut::before {
+  background-position: -144px center;
+}
+.section-shortcut .shortcut-item.compliment .ico-shortcut::before {
+  background-position: -240px center;
+}
+.section-shortcut .shortcut-item.reservation .ico-shortcut::before {
+  background-position: -336px center;
+}
+.section-shortcut .shortcut-item.statistic .ico-shortcut::before {
+  background-position: -288px center;
+}
+.section-shortcut .shortcut-item.passport .ico-shortcut::before {
+  background-position: -384px center;
+}
+.section-shortcut .shortcut-item.sightseeing .ico-shortcut::before {
+  background-position: -432px center;
+}
+.section-shortcut .shortcut-item.enterprise .ico-shortcut::before {
+  background-position: -192px center;
+}
+.section-shortcut .shortcut-item.waste .ico-shortcut::before {
+  background-position: -480px center;
+}
+.section-shortcut .shortcut-item.tax .ico-shortcut::before {
+  background-position: -528px center;
+}
+.section-shortcut .shortcut-item.register .ico-shortcut::before {
+  background-position: -576px center;
+}
+.section-shortcut .link-shortcut:hover .ico-shortcut::before {
+  transform: translateY(0);
+}
+.section-shortcut .link-shortcut .title-box {
+  text-align: center;
+}
+.section-shortcut .link-shortcut .title {  
+  display: inline-block;
+  position: relative;
+  padding: 0 7px 11px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  vertical-align: top;
+  color: #000;
+  transition: color 200ms ease-in-out;
+}
+.section-shortcut .link-shortcut:hover .title {
+  color: #00183a;
+}
+.section-shortcut .link-shortcut .title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 45, 109, 0.5);
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
+}
+.section-shortcut .link-shortcut:hover .title::before {
+  transform: scaleX(1);
+}
+.section-shortcut .link-shortcut .title span {
+  display: block;
+  transform: translateY(-5px);
+  transition: transform 200ms ease-in-out;
+}
+.section-shortcut .link-shortcut:hover .title span {
+  font-weight: 500;
+  transform: translateY(0);
 }
