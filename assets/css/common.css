@@ -60,8 +60,8 @@ input {
   background-repeat: no-repeat;
   background-size: 740px 150px;
 }
-.header .btn-search::before,
-.header .keyword-area .title::before,
+.section-search .btn-search::before,
+.section-search .keyword-area .title::before,
 .section-visual .btn-prev::before,
 .section-visual .btn-control::before,
 .section-visual .btn-next::before,
