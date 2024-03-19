@@ -596,7 +596,7 @@ body {
 }
 .footer .related-item {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   float: left;
   width: 16.666%;
   transition: background-color 200ms ease-in-out;
