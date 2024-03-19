@@ -33,6 +33,19 @@ input {
   margin: 0 auto;
 }
 
+.horizontal-section {}
+.horizontal-section::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.horizontal-section .column-left {
+  float: left;
+}
+.horizontal-section .column-right {
+  float: right;
+}
+
 .header .service-item .link-login::before,
 .header .service-item .btn-lang::before,
 .header .service-item .btn-lang::after,
@@ -67,7 +80,11 @@ input {
 .section-visual .btn-next::before,
 .section-visual .btn-more::before,
 .section-news .link-more::before,
-.section-event .slide-control .btn::before {
+.section-event .slide-control .btn::before,
+.section-communication .link-blog .ico-arrow::before,
+.section-communication .link-sns .ico-arrow::before,
+.section-communication .ico-news::before,
+.section-communication .link-news .ico-play {
   background-image: url("../images/main/main_icons.png");
   background-repeat: no-repeat;
   background-size: 300px 180px;
