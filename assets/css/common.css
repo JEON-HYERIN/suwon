@@ -84,7 +84,9 @@ input {
 .section-communication .link-blog .ico-arrow::before,
 .section-communication .link-sns .ico-arrow::before,
 .section-communication .ico-news::before,
-.section-communication .link-news .ico-play {
+.section-communication .link-news .ico-play,
+.section-board .slide-control .btn::before,
+.section-board .link-more::before {
   background-image: url("../images/main/main_icons.png");
   background-repeat: no-repeat;
   background-size: 300px 180px;

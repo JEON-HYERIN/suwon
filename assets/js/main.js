@@ -238,3 +238,407 @@ visualSlide.on('init reInit afterChange', function(event, slick, currentSlide, n
         }
       }]
   })
+
+  $('.section-board .board[data-category="civicism"] .board-list').slick({
+    slidesToShow: 5,
+    prevArrow: $('.section-board .board[data-category="civicism"] .btn-prev'),
+    nextArrow: $('.section-board .board[data-category="civicism"] .btn-next'),
+    autoplay : false,
+    dots:false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: false,
+    pauseOnDotsHover : true,
+    swipe:false,
+    draggable:false,
+    responsive: [
+      {
+        breakpoint: 1501,
+        settings: {
+        slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+        slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 1001,
+        settings: {
+        swipe:true,
+        draggable:true,
+        swipeToSlide: true,
+        slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 801,
+        settings: {
+        swipe:true,
+        draggable:true,
+        swipeToSlide: true,
+        slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 641,
+        settings: {
+        swipe:true,
+        draggable:true,
+        swipeToSlide: true,
+        slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 548,
+        settings: {
+        swipe:true,
+        draggable:true,
+        swipeToSlide: true,
+        slidesToShow: 1
+        }
+      }]
+  })
+  $('.section-board .board[data-category="job"] .board-list').slick({
+    slidesToShow: 5,
+    prevArrow: $('.section-board .board[data-category="job"] .btn-prev'),
+    nextArrow: $('.section-board .board[data-category="job"] .btn-next'),
+    autoplay : false,
+    dots:false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: false,
+    pauseOnDotsHover : true,
+    swipe:false,
+    draggable:false,
+    responsive: [
+    {
+    breakpoint: 1501,
+    settings: {
+    slidesToShow: 3
+    }
+    },
+    {
+    breakpoint: 1201,
+    settings: {
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 1001,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 801,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 1
+    }
+    },
+    {
+    breakpoint: 641,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 548,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 1
+    }
+    }]
+  })
+  $('.section-board .board[data-category="news"] .board-list').slick({
+    slidesToShow: 5,
+    prevArrow: $('.section-board .board[data-category="news"] .btn-prev'),
+    nextArrow: $('.section-board .board[data-category="news"] .btn-next'),
+    autoplay : false,
+    dots:false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: false,
+    pauseOnDotsHover : true,
+    swipe:false,
+    draggable:false,
+    responsive: [
+    {
+    breakpoint: 1501,
+    settings: {
+    slidesToShow: 3
+    }
+    },
+    {
+    breakpoint: 1201,
+    settings: {
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 1001,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 801,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 1
+    }
+    },
+    {
+    breakpoint: 641,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 548,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 1
+    }
+    }]
+  })
+  $('.section-board .board[data-category="receipt"] .board-list').slick({
+    slidesToShow: 5,
+    prevArrow: $('.section-board .board[data-category="receipt"] .btn-prev'),
+    nextArrow: $('.section-board .board[data-category="receipt"] .btn-next'),
+    autoplay : false,
+    dots:false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: false,
+    pauseOnDotsHover : true,
+    swipe:false,
+    draggable:false,
+    responsive: [
+    {
+    breakpoint: 1501,
+    settings: {
+    slidesToShow: 3
+    }
+    },
+    {
+    breakpoint: 1201,
+    settings: {
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 1001,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 801,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 1
+    }
+    },
+    {
+    breakpoint: 641,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 548,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 1
+    }
+    }]
+  })
+  $('.section-board .board[data-category="information"] .board-list').slick({
+    slidesToShow: 5,
+    prevArrow: $('.section-board .board[data-category="information"] .btn-prev'),
+    nextArrow: $('.section-board .board[data-category="information"] .btn-next'),
+    autoplay : false,
+    dots:false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: false,
+    pauseOnDotsHover : true,
+    swipe:false,
+    draggable:false,
+    responsive: [
+    {
+    breakpoint: 1501,
+    settings: {
+    slidesToShow: 3
+    }
+    },
+    {
+    breakpoint: 1201,
+    settings: {
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 1001,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 801,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 1
+    }
+    },
+    {
+    breakpoint: 641,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 548,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 1
+    }
+    }]
+  })
+  $('.section-board .board[data-category="bulletin"] .board-list').slick({
+    slidesToShow: 5,
+    prevArrow: $('.section-board .board[data-category="bulletin"] .btn-prev'),
+    nextArrow: $('.section-board .board[data-category="bulletin"] .btn-next'),
+    autoplay : false,
+    dots:false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: false,
+    pauseOnDotsHover : true,
+    swipe:false,
+    draggable:false,
+    responsive: [
+    {
+    breakpoint: 1501,
+    settings: {
+    slidesToShow: 3
+    }
+    },
+    {
+    breakpoint: 1201,
+    settings: {
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 1001,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 801,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 1
+    }
+    },
+    {
+    breakpoint: 641,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 2
+    }
+    },
+    {
+    breakpoint: 548,
+    settings: {
+    swipe:true,
+    draggable:true,
+    swipeToSlide: true,
+    slidesToShow: 1
+    }
+    }]
+  })
+
+  $('.section-board .btn-tab').click(function() {
+    const data = $(this).parent().data('tab');
+    const boardEls = document.querySelectorAll('.section-board .board');
+    
+    $(this).parent().addClass('is-active').siblings().removeClass('is-active');
+
+    boardEls.forEach(function(el) {
+      // console.log(el.dataset.category);
+      if(el.dataset.category === data) {
+        el.classList.add('is-visible');
+      } else {
+        el.classList.remove('is-visible')
+      }
+    })
+    // $('.section-board .board-container').find('.is-visible').slick('setPosition');
+    // console.log(target);
+    // const index = $(this).index();
+
+    // $('.section-board .board-list-wrap').eq(index).addClass('is-visible').siblings().removeClass('is-visible');
+    // $(this).addClass('is-active').siblings().removeClass('is-active');
+    // $('.section-board .board-list').slick('setPosition');
+  
+    // console.log(data);
+  })
