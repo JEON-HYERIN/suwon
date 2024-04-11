@@ -1100,7 +1100,10 @@
 
 .section-job .link-job {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
   padding-bottom: 51px;
   color: #000;
   transition: color 200ms ease-in-out;
@@ -1145,20 +1148,9 @@
   transition-timing-function: ease-in-out;
 }
 
-.section-job .link-job:hover .date-box {
-  border-color: #e9f6fb;
-  background-color: #e9f6fb;
-}
-
-.section-job .link-job .date-box .text {
-  display: block;
-  line-height: 20px;
-}
-
 .section-job .link-job .title-box {
   display: inline-block;
-  width: 304px;
-  margin-left: 20px;
+  width: 330px;
   vertical-align: middle;
 }
 
@@ -1177,6 +1169,17 @@
   line-height: 28px;
   letter-spacing: -0.03em;
 }
+
+.section-job .link-job:hover .date-box {
+  border-color: #e9f6fb;
+  background-color: #e9f6fb;
+}
+
+.section-job .link-job .date-box .text {
+  display: block;
+  line-height: 20px;
+}
+
 
 .section-shortcut .slide-area {
   position: relative;
