@@ -61,8 +61,8 @@ visualSlide.on('init reInit afterChange', function (event, slick, currentSlide, 
 
   // $('.section-visual .page').html("<span class='current'>"+currentPage+"</span><span> - " + "</span>" + "<span class='total'>" + totalPage +"</span>");
 
-  $('.section-visual .page .current').text(currentPage);
-  $('.section-visual .page .total').text(totalPage);
+  $('.section-visual .page .current').html(`<span class="blind">현재 페이지</span>${currentPage}`);
+  $('.section-visual .page .total').html(`<span class="blind">전체 페이지</span>${totalPage}`);
 });
 
 let slidePaused = false; //자동재생상태
