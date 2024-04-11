@@ -730,13 +730,24 @@
   display: block;
   clear: both;
 }
-.section-board .tab-list {
-  float: left;
-  width: 96px;
-  margin-top: 41px;
+.section-board .category-list {
+  /* float: left; */
+  /* width: 96px; */
+  /* margin-top: 41px; */
+  height: 330px;
 }
-.section-board .tab-item + .tab-item {
-  margin-top: 16px;
+.section-board .category-item + .tab-item {
+  /* margin-top: 16px; */
+}
+.section-board .category-item {
+  position: relative;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+}
+.section-board .category-item .title {
+  /* width: 96px; */
+  /* flex-shrink: 0; */
 }
 .section-board .btn-tab {
   font-family: 'SCoreDream', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;
@@ -746,14 +757,42 @@
   letter-spacing: 0;
   color: #5a5f6e;
 }
-.section-board .tab-item.is-active .btn-tab {
+.section-board .category-item.is-active .btn-tab {
   font-size: 20px;
   font-weight: 600;
   color: #000;
 }
 .section-board .board-container {
-  float: right;
-  width: calc(100% - 110px);
+  /* float: right; */
+  /* width: calc(100% - 110px); */
+}
+.section-board .category-title {
+  position: absolute;
+  left: 0;
+}
+.section-board .category-item:nth-child(1) .category-title {
+  top: 41px;
+}
+.section-board .category-item:nth-child(2) .category-title {
+  top: 50px;
+  top: 83px;
+}
+.section-board .category-item:nth-child(3) .category-title {
+  top: 125px;
+}
+.section-board .category-item:nth-child(4) .category-title {
+  top: 166px;
+}
+.section-board .category-item:nth-child(5) .category-title {
+  top: 210px;
+}
+.section-board .category-item:nth-child(6) .category-title {
+  top: 252px;
+}
+.section-board .slide-control-wrap .inner {
+  position: absolute;
+  top: -63px;
+  right: 0;
 }
 .section-board .slide-control-wrap .inner {
   position: absolute;
@@ -846,12 +885,17 @@
 }
 .section-board .board {
   display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 110px);
 }
-.section-board .board.is-visible {
+.section-board .category-item.is-active .board {
   display: block;
 }
 .section-board .board-list {
-  height: 330px;
+  /* height: 330px; */
+  height: 100%;
   overflow: hidden;
   mask-image: linear-gradient(to right, black 85%, rgba(0, 0, 0, 0.2) 89%, transparent 97%);
 }

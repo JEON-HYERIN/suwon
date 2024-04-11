@@ -622,16 +622,16 @@ visualSlide.on('init reInit afterChange', function(event, slick, currentSlide, n
     const data = $(this).parent().data('tab');
     const boardEls = document.querySelectorAll('.section-board .board');
     
-    $(this).parent().addClass('is-active').siblings().removeClass('is-active');
+    $(this).parent().parent().addClass('is-active').siblings().removeClass('is-active');
 
-    boardEls.forEach(function(el) {
-      // console.log(el.dataset.category);
-      if(el.dataset.category === data) {
-        el.classList.add('is-visible');
-      } else {
-        el.classList.remove('is-visible')
-      }
-    })
+    // boardEls.forEach(function(el) {
+    //   // console.log(el.dataset.category);
+    //   if(el.dataset.category === data) {
+    //     el.classList.add('is-visible');
+    //   } else {
+    //     el.classList.remove('is-visible')
+    //   }
+    // })
     // $('.section-board .board-container').find('.is-visible').slick('setPosition');
     // console.log(target);
     // const index = $(this).index();
