@@ -586,7 +586,7 @@ body {
   box-shadow: 8px 13px 28px 0px rgba(0, 51, 102, 0.1);
 }
 
-.footer .related-area {
+.footer .section-related {
   background-color: #e1e2e7;
 }
 .footer .related-list::after {
