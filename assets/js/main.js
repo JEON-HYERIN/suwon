@@ -37,6 +37,36 @@ $('.header .btn-lang').on('click', function() {
   }
 });
 
+// zoom btn
+let zoomValue = 1;
+$('.header .btn-zoom.in').on('click', function() {
+  const bodyEl = $('body');
+  zoomValue = zoomValue + 0.1;
+
+  bodyEl.css({
+    'transform': `scale(${zoomValue})`,
+    'transformOrigin': 'left top'
+  });
+
+  if(zoomValue === 1) {
+    bodyEl.removeAttr('style');
+  }
+});
+
+$('.header .btn-zoom.out').on('click', function() {
+  const bodyEl = $('body');
+  zoomValue = zoomValue - 0.1;
+
+  bodyEl.css({
+    'transform': `scale(${zoomValue})`,
+    'transformOrigin': 'left top'
+  });
+  
+  if(zoomValue === 1) {
+    bodyEl.removeAttr('style');
+  }
+});
+
 $('.footer .btn-related').unbind('click').bind('click', function () {
   const index = $(this).parent().index();
 
