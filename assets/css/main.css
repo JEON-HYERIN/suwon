@@ -1419,6 +1419,14 @@
   background-color: #e0e2e2;
 }
 
+.section-news .news-board-area {
+  position: relative;
+}
+
+.section-news .news-board {
+  margin-top: 70px;
+}
+
 .section-news .tab-area {
   margin-bottom: 42px;
 }
@@ -1430,6 +1438,8 @@
 }
 
 .section-news .btn-tab {
+  position: absolute;
+  top: -73px;
   color: #919191;
   font-family: 'Tenada', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;
   font-size: 26px;
@@ -1441,12 +1451,20 @@
   transition: color 200ms ease-in-out;
 }
 
-.section-news .btn-tab.is-active {
+.section-news .news-board.is-active .btn-tab {
   font-size: 30px;
   color: #014099;
 }
 
-.section-news .btn-tab+.btn-tab::before {
+.section-news .news-board:nth-child(1) .btn-tab {
+  left: 0;
+}
+
+.section-news .news-board:nth-child(2) .btn-tab {
+  left: 100px;
+}
+
+.section-news .news-board:nth-child(2) .btn-tab::before {
   content: '';
   display: inline-block;
   width: 1px;
@@ -1456,12 +1474,11 @@
   vertical-align: -3px;
 }
 
-
-.section-news .news-board {
+.section-news .news-list {
   display: none;
 }
 
-.section-news .news-board.is-visible {
+.section-news .news-board.is-active .news-list {
   display: block;
 }
 
@@ -1549,7 +1566,7 @@
 
 .section-news .link-more {
   position: absolute;
-  top: 0;
+  top: -83px;
   right: 0;
   width: 48px;
   height: 48px;
