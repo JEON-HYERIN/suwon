@@ -9,9 +9,9 @@ a,em,span {
 button {
   padding: 0;
   cursor: pointer;
-  &:focus:not(:focus-visible) {
-    outline: none;
-  }
+}
+button:focus:not(:focus-visible) {
+  outline: none;
 }
 
 input {
