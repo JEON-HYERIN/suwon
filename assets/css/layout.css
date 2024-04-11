@@ -836,9 +836,9 @@ body {
 .footer .link-corp:hover {
   text-decoration: underline;
 }
-.footer .link-corp strong {
-  color: #014099;
+.footer .link-corp.highlight {
   font-weight: 600;
+  color: #014099;
 }
 .footer .address-area {
   margin-top: 10px;
