@@ -155,11 +155,16 @@ body {
   width: 18px;
   height: 19px;
 }
+.header .service-item.lang {
+  z-index: 3;
+}
+.header .lang.is-open .btn-lang::after {
+  background-position: -120px -42px;
+}
 .header .service-item .btn-lang { 
   position: relative;
-  margin-left: 16px;
-  padding-left: 28px;
-  padding-right: 30px;
+  margin: 0 13px 0 16px;
+  padding: 0 30px 0 28px;
 }
 .header .service-item .btn-lang::before {
   content: '';
@@ -179,10 +184,89 @@ body {
   height: 6px;
   background-position: -95px -41px;
 }
+.header .lang-list-wrap {
+  position: absolute;
+  top: 39px;
+  left: 0;
+  width: 100%;
+}
+.header .lang-list-wrap::before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 0;
+  z-index: -1;
+  width: calc(100% + 1px);
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 8px 13px 28px 0px rgba(0, 51, 102, 0.1);
+}
+.lang.is-open .lang-list-wrap::before {
+  display: block;
+}
+.header .lang-list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 13px 15px 24px;
+  box-sizing: border-box;
+}
+.header .lang-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(50% - 62px);
+  width: 124px;
+  height: 1px;
+  background-color: #eceff0;
+}
+.header .lang-list::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: calc(100% + 1px);
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 8px 13px 28px 0px rgba(0, 51, 102, 0.1);
+  border-radius: 0 0 10px 10px;
+}
+.header .lang-item.is-active .link-lang {
+  color: #109cda;
+}
+.header .link-lang {
+  display: flex;
+  column-gap: 10px;
+  padding: 0 11px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: #5a5f6e;
+}
+.header .link-lang:hover {
+  text-decoration: underline;
+}
+.header .link-lang::before {
+  content: '';
+  flex-shrink: 0;
+  position: relative;
+  top: 6px;
+  display: inline-block;
+  width: 10px;
+  height: 7px;
+  background-position: -63px -41px;
+  visibility: hidden;
+}
+.header .lang-item.is-active .link-lang::before {
+  visibility: visible;
+}
 .header .service-item.zoom {
-  margin-left: 13px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 .header .service-item.zoom::after {
   content: '';

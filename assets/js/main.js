@@ -25,6 +25,18 @@ $('.lnb-list-wrap').on('mouseleave', function (e) {
   $('.gnb-item').removeClass('is-active');
 })
 
+// lang btn
+$('.header .btn-lang').on('click', function() {
+  $(this).parent().toggleClass('is-open');
+  $('.header .lang-list').stop().slideToggle();
+
+  if($(this).parent().hasClass('is-open')) {
+    $(this).attr('aria-label', '언어선택 닫기');
+  } else {
+    $(this).attr('aria-label', '언어선택 열기');
+  }
+});
+
 $('.footer .btn-related').unbind('click').bind('click', function () {
   const index = $(this).parent().index();
 

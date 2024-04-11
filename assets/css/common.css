@@ -49,6 +49,7 @@ input {
 .header .service-item .link-login::before,
 .header .service-item .btn-lang::before,
 .header .service-item .btn-lang::after,
+.header .link-lang::before,
 .header .service-item .btn-family::after,
 .header .link-sitemap::before,
 .header .link-site[target="_blank"]::after,
