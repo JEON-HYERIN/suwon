@@ -74,15 +74,15 @@ body {
 .header .group-top .column-right {
   float: right;
 }
-.header .intro-list::after {
+.header .util-list::after {
   content: '';
   display: block;
   clear: both;
 }
-.header .intro-item {
+.header .util-item {
   float: left;
 }
-.header .link-intro {
+.header .link-util {
   display: block;
   position: relative;
   padding: 12px 0;
@@ -92,14 +92,14 @@ body {
   line-height: 26px;
   color: #5a5f6e;
 }
-.header .link-intro:hover {
+.header .link-util:hover {
   color: #000;
 }
-.header .intro-item + .intro-item .link-intro {
+.header .util-item + .util-item .link-util {
   margin-left: 10px;
   padding-left: 13px;
 }
-.header .intro-item + .intro-item .link-intro::before {
+.header .util-item + .util-item .link-util::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -108,7 +108,7 @@ body {
   height: 2px;
   background-color: #cdd3d8;
 }
-.header .link-intro em {
+.header .link-util em {
   color: #109cda;
 }
 .header .service-list {
