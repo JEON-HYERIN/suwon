@@ -722,30 +722,23 @@
   vertical-align: 3px;
   background: url("../images/main/board_title_bul.png") left center no-repeat;
 }
-.section-board .content {
-  padding-left: 59px;
-}
-.section-board .content::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.section-board .category-list {
+
+.section-board .tab-list {
   /* float: left; */
   /* width: 96px; */
   /* margin-top: 41px; */
   height: 330px;
 }
-.section-board .category-item + .tab-item {
+.section-board .tab-item + .tab-item {
   /* margin-top: 16px; */
 }
-.section-board .category-item {
+.section-board .tab-item {
   position: relative;
   /* display: flex; */
   /* justify-content: flex-end; */
   /* justify-content: space-between; */
 }
-.section-board .category-item .title {
+.section-board .tab-item .title {
   /* width: 96px; */
   /* flex-shrink: 0; */
 }
@@ -757,7 +750,7 @@
   letter-spacing: 0;
   color: #5a5f6e;
 }
-.section-board .category-item.is-active .btn-tab {
+.section-board .tab-item.is-active .btn-tab {
   font-size: 20px;
   font-weight: 600;
   color: #000;
@@ -765,28 +758,29 @@
 .section-board .board-container {
   /* float: right; */
   /* width: calc(100% - 110px); */
+  padding-left: 59px;
 }
-.section-board .category-title {
+.section-board .tab-title {
   position: absolute;
   left: 0;
 }
-.section-board .category-item:nth-child(1) .category-title {
+.section-board .tab-item:nth-child(1) .tab-title {
   top: 41px;
 }
-.section-board .category-item:nth-child(2) .category-title {
+.section-board .tab-item:nth-child(2) .tab-title {
   top: 50px;
   top: 83px;
 }
-.section-board .category-item:nth-child(3) .category-title {
+.section-board .tab-item:nth-child(3) .tab-title {
   top: 125px;
 }
-.section-board .category-item:nth-child(4) .category-title {
+.section-board .tab-item:nth-child(4) .tab-title {
   top: 166px;
 }
-.section-board .category-item:nth-child(5) .category-title {
+.section-board .tab-item:nth-child(5) .tab-title {
   top: 210px;
 }
-.section-board .category-item:nth-child(6) .category-title {
+.section-board .tab-item:nth-child(6) .tab-title {
   top: 252px;
 }
 .section-board .slide-control-wrap .inner {
@@ -890,7 +884,7 @@
   right: 0;
   width: calc(100% - 110px);
 }
-.section-board .category-item.is-active .board {
+.section-board .tab-item.is-active .board {
   display: block;
 }
 .section-board .board-list {
