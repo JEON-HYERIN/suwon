@@ -59,24 +59,14 @@ body {
   height: 50px;
   border-bottom: 1px solid #d9dfe2;
 }
-.header .group-top .common-inner::after {
-  content: '';
-  display: block;
-  clear: both;
+.header .group-top .common-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header .group-top .column-left {
-  float: left;
-}
-.header .group-top .column-right {
-  float: right;
-}
-.header .util-list::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.header .util-item {
-  float: left;
+.header .util-list {
+  display: flex;
+  column-gap: 10px;
 }
 .header .link-util {
   display: block;
@@ -92,7 +82,6 @@ body {
   color: #000;
 }
 .header .util-item + .util-item .link-util {
-  margin-left: 10px;
   padding-left: 13px;
 }
 .header .util-item + .util-item .link-util::before {
@@ -104,28 +93,15 @@ body {
   height: 2px;
   background-color: #cdd3d8;
 }
-.header .link-util em {
+.header .link-util .highlight {
   color: #109cda;
 }
 .header .service-list {
+  display: flex;
+  align-items: center;
   padding: 11px 0;
 }
-.header .service-list::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.header .service-item + .service-item::before {
-  content: '';
-  position: absolute;
-  top: calc(50% - 9px);
-  left: 0;
-  width: 1px;
-  height: 19px;
-  background-color: #c0c9cf;
-}
 .header .service-item {
-  float: left;
   position: relative;
   font-size: 14px;
   font-weight: 500;
@@ -133,10 +109,20 @@ body {
   letter-spacing: 0;
   color: #333;
 }
+.header .service-item + .service-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 19px;
+  background-color: #c0c9cf;
+}
 .header .service-item .link-login {
-  display: block;
-  position: relative;
-  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
   margin-right: 18px;
 }
 .header .service-item .link-login:hover {
@@ -145,9 +131,7 @@ body {
 }
 .header .service-item .link-login::before {
   content: '';
-  position: absolute;
-  top: calc(50% - 9px);
-  left: 0;
+  display: block;
   width: 18px;
   height: 19px;
 }
@@ -158,26 +142,25 @@ body {
   background-position: -120px -42px;
 }
 .header .service-item .btn-lang { 
-  position: relative;
+  display: flex;
+  align-items: center;
   margin: 0 13px 0 16px;
-  padding: 0 30px 0 28px;
+}
+.header .service-item .btn-lang::before,
+.header .service-item .btn-lang::after {
+  content: '';
+  display: block;
 }
 .header .service-item .btn-lang::before {
-  content: '';
-  position: absolute;
-  top: calc(50% - 9px);
-  left: 0;
   width: 18px;
   height: 18px;
+  margin-right: 11px;
   background-position: -94px -2px;
   }
 .header .service-item .btn-lang::after {
-  content: '';
-  position: absolute;
-  top: calc(50% - 3px);
-  right: 0;
   width: 8px;
   height: 6px;
+  margin-left: 23px;
   background-position: -95px -41px;
 }
 .header .lang-list-wrap {
@@ -214,7 +197,8 @@ body {
   content: '';
   position: absolute;
   top: 0;
-  left: calc(50% - 62px);
+  left: 50%;
+  transform: translateX(-50%);
   width: 124px;
   height: 1px;
   background-color: #eceff0;
@@ -262,43 +246,28 @@ body {
   visibility: visible;
 }
 .header .service-item.zoom {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
   padding: 0 20px;
 }
-.header .service-item.zoom::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.header .service-item.zoom .title {
-  float: left;
-}
 .header .service-item.zoom .btn-area {
-  float: left;
-  margin-top: 3px;
-  margin-left: 15px;
-}
-.header .service-item.zoom .btn-area::after {
-  content: '';
-  display: block;
-  clear: both;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
 }
 .header .service-item .btn-zoom {
-  position: relative;
-  float: left;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
   border: 1px solid #c0c9cf;
   border-radius: 3px;
 }
-.header .service-item .btn-zoom + .btn-zoom {
-  margin-left: 5px;
-}
 .header .service-item .btn-zoom::before {
   content: '';
-  position: absolute;
-  top: 5px;
-  left: calc(50% - 5px);
+  display: block;
   width: 10px;
   height: 9px;
 }
@@ -309,15 +278,14 @@ body {
   background-position: -30px top;
 }
 .header .service-item .btn-family {
-  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
   margin-left: 20px;
-  padding-right: 30px;
 }
 .header .service-item .btn-family::after {
   content: '';
-  position: absolute;
-  top: calc(50% - 3px);
-  right: 0;
+  display: block;
   width: 8px;
   height: 6px;
   background-position: -95px -41px;
