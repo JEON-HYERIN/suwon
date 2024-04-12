@@ -2,7 +2,9 @@
   /* box-sizing: border-box; */
 }
 
-a,em,span {
+a,
+em,
+span {
   box-sizing: border-box;
 }
 
@@ -10,6 +12,7 @@ button {
   padding: 0;
   cursor: pointer;
 }
+
 button:focus:not(:focus-visible) {
   outline: none;
 }
@@ -34,14 +37,17 @@ input {
 }
 
 .horizontal-section {}
+
 .horizontal-section::after {
   content: '';
   display: block;
   clear: both;
 }
+
 .horizontal-section .column-left {
   float: left;
 }
+
 .horizontal-section .column-right {
   float: right;
 }
@@ -53,7 +59,7 @@ input {
 .header .service-item .btn-family::after,
 .header .link-sitemap::before,
 .header .link-site[target="_blank"]::after,
-.footer .btn-related::before,
+.footer .btn-related::after,
 .footer .link-contact.notify::before,
 .footer .link-contact.notify::after {
   background-image: url("../images/common/common_sprite.png");
@@ -74,6 +80,7 @@ input {
   background-repeat: no-repeat;
   background-size: 762px 150px;
 }
+
 .section-search .btn-search::before,
 .section-search .keyword-area .title::before,
 .section-visual .btn-prev::before,
