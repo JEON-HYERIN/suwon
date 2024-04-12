@@ -41,6 +41,11 @@ input {
   justify-content: space-between;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
 .header .service-item .link-login::before,
 .header .service-item .btn-lang::before,
 .header .service-item .btn-lang::after,

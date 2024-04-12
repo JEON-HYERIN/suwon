@@ -752,10 +752,6 @@
 .section-board .swiper-button-next:hover::before {
   background-position: -225px top;
 }
-.section-board .swiper-button-prev::after,
-.section-board .swiper-button-next::after {
-  display: none;
-}
 .section-board .link-more {
   display: flex;
   justify-content: center;
@@ -1039,12 +1035,14 @@
   line-height: 20px;
 }
 
+/* shortcut */
 .section-shortcut .slide-area {
   position: relative;
   padding: 0 89px;
 }
 
-.section-shortcut .slide-control .btn {
+.section-shortcut .swiper-button-prev,
+.section-shortcut .swiper-button-next {
   position: absolute;
   top: 33px;
   width: 55px;
@@ -1054,15 +1052,16 @@
   box-shadow: rgba(0, 0, 0, 0.15) 10px 17px 35px;
 }
 
-.section-shortcut .slide-control .btn-prev {
+.section-shortcut .swiper-button-prev {
   left: 0;
 }
 
-.section-shortcut .slide-control .btn-next {
+.section-shortcut .swiper-button-next {
   right: 0;
 }
 
-.section-shortcut .slide-control .btn::before {
+.section-shortcut .swiper-button-prev::before,
+.section-shortcut .swiper-button-next::before {
   content: '';
   position: absolute;
   top: calc(50% - 10px);
@@ -1073,30 +1072,47 @@
   background-repeat: no-repeat;
 }
 
-.section-shortcut .slide-control .btn-prev::before {
+.section-shortcut .swiper-button-prev::before {
   background-position: -15px -90px;
 }
-.section-shortcut .slide-control .btn-prev.slick-disabled::before {
+.section-shortcut .swiper-button-next::before {
+  background-position: -60px -90px;
+}
+
+.section-shortcut .swiper-button-prev:hover::before {
+  background-position: -30px -90px;
+}
+
+.section-shortcut .swiper-button-next:hover::before {
+  background-position: -75px -90px;
+}
+
+.section-shortcut .swiper-button-disabled {
+  opacity: 1;
+}
+
+.section-shortcut .swiper-button-prev.swiper-button-disabled::before {
   background-position: left -90px;
 }
 
-.section-shortcut .slide-control .btn-next::before {
-  background-position: -60px -90px;
-}
-.section-shortcut .slide-control .btn-next.slick-disabled::before  {
+.section-shortcut .swiper-button-next.swiper-button-disabled::before  {
   background-position: -45px -90px;
 }
 
 .section-shortcut .link-shortcut {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 14px;
 }
 
 .section-shortcut .link-shortcut .ico-shortcut {
-  display: block;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90px;
   height: 90px;
-  margin: 0 auto 14px;
   border-radius: 30px;
   transition-property: background-color, box-shadow;
   transition-duration: 200ms;
@@ -1110,9 +1126,7 @@
 
 .section-shortcut .link-shortcut .ico-shortcut::before {
   content: '';
-  position: absolute;
-  top: calc(50% - 24px);
-  left: calc(50% - 24px);
+  display: block;
   width: 48px;
   height: 47px;
   background: url("../images/main/shortcut_icons.png") no-repeat;

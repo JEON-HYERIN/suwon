@@ -142,47 +142,54 @@ const talkSwiper = new Swiper('.section-talk .swiper', {
   }
 });
 
-$('.section-shortcut .shortcut-list').slick({
-  autoplay: false,
-  dots: false,
-  slidesToShow: 8,
-  slidesToScroll: 1,
-  variableWidth: false,
-  infinite: false,
-  prevArrow: $('.section-shortcut .btn-prev'),
-  nextArrow: $('.section-shortcut .btn-next'),
-  pauseOnDotsHover: true,
-  swipe: false,
-  draggable: false,
-  responsive: [{
-      breakpoint: 1001,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 6
-      }
-    },
-    {
-      breakpoint: 641,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 4
-      }
-    },
-    {
-      breakpoint: 441,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 3
-      }
-    }
-  ]
-})
+new Swiper('.section-shortcut .swiper', {
+  slidesPerView: 8,
+  navigation: {
+    prevEl: '.section-shortcut .swiper-button-prev',
+    nextEl: '.section-shortcut .swiper-button-next'
+  }
+});
+// $('.section-shortcut .shortcut-list').slick({
+//   autoplay: false,
+//   dots: false,
+//   slidesToShow: 8,
+//   slidesToScroll: 1,
+//   variableWidth: false,
+//   infinite: false,
+//   prevArrow: $('.section-shortcut .btn-prev'),
+//   nextArrow: $('.section-shortcut .btn-next'),
+//   pauseOnDotsHover: true,
+//   swipe: false,
+//   draggable: false,
+//   responsive: [{
+//       breakpoint: 1001,
+//       settings: {
+//         swipe: true,
+//         draggable: true,
+//         swipeToSlide: true,
+//         slidesToShow: 6
+//       }
+//     },
+//     {
+//       breakpoint: 641,
+//       settings: {
+//         swipe: true,
+//         draggable: true,
+//         swipeToSlide: true,
+//         slidesToShow: 4
+//       }
+//     },
+//     {
+//       breakpoint: 441,
+//       settings: {
+//         swipe: true,
+//         draggable: true,
+//         swipeToSlide: true,
+//         slidesToShow: 3
+//       }
+//     }
+//   ]
+// })
 
 $('.section-news .news-list').slick({
   autoplay: false,
