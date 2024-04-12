@@ -238,20 +238,29 @@ $('.section-news .btn-tab').click(function () {
   $(this).parent().addClass('is-active').siblings().removeClass('is-active');
 })
 
-$('.section-event .event-list').slick({
-  prevArrow: $('.section-event .btn-prev'),
-  nextArrow: $('.section-event .btn-next'),
-  pauseOnDotsHover: true,
-  swipe: false,
-  draggable: false,
-  responsive: [{
-    breakpoint: 1001,
-    settings: {
-      swipe: true,
-      draggable: true
-    }
-  }]
+// event
+new Swiper('.section-event .swiper', {
+  loop: true,
+  navigation: {
+    prevEl: '.section-event .swiper-button-prev',
+    nextEl: '.section-event .swiper-button-next',
+  }
 })
+
+// $('.section-event .event-list').slick({
+//   prevArrow: $('.section-event .btn-prev'),
+//   nextArrow: $('.section-event .btn-next'),
+//   pauseOnDotsHover: true,
+//   swipe: false,
+//   draggable: false,
+//   responsive: [{
+//     breakpoint: 1001,
+//     settings: {
+//       swipe: true,
+//       draggable: true
+//     }
+//   }]
+// })
 
 new Swiper('.section-board .board[data-category="civicism"] .swiper', {
   navigation: {
