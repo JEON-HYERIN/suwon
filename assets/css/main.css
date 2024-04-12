@@ -151,6 +151,7 @@
   margin-top: 36px;
 }
 
+/* visual */
 .section-visual {
   position: relative;
 }
@@ -264,6 +265,7 @@
   display: block;
 }
 
+/* mayor */
 .section-mayor {
   position: relative;
 }
@@ -284,7 +286,7 @@
   padding: 48px 248px 32px 50px;
   border-radius: 60px 30px 60px 30px;
   overflow: hidden;
-  background-image: linear-gradient(125deg, #ffffff 42%, #b7ddfa 84%, #90b8e9 100%);
+  background-image: linear-gradient(125deg, #fff 42%, #b7ddfa 84%, #90b8e9 100%);
   box-shadow: rgba(180, 189, 195, 0.35) 18px 30px 50px;
 }
 
@@ -336,17 +338,12 @@
 }
 
 .section-mayor .link-area {
+  display: flex;
+  column-gap: 11px;
   margin-top: 20px;
 }
 
-.section-mayor .link-area::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .section-mayor .link-mayor {
-  float: left;
   min-width: 112px;
   padding: 7px 25px 8px 24px;
   font-size: 16px;
@@ -363,21 +360,20 @@
   transition-timing-function: ease-in-out;
 }
 
-.section-mayor .link-mayor+.link-mayor {
-  margin-left: 11px;
-}
-
 .section-mayor .link-mayor:hover {
-  background-color: #0087cd;
   color: #fff;
+  background-color: #0087cd;
 }
 
+/* service */
 .section-service {
   margin-top: 20px;
 }
 
 .section-service .service-list {
   position: relative;
+  display: flex;
+  column-gap: 28px;
   padding: 25px 26px 24px 48px;
   border-radius: 50px 20px 50px 20px;
   background-image: linear-gradient(135deg, #d1f7ff 28%, #a7d9f8 81%);
@@ -391,27 +387,19 @@
   width: 560px;
   height: 53px;
   background: url("../images/main/service_bg.png") no-repeat center bottom;
-}
-
-.section-service .service-list::after {
-  content: '';
-  display: block;
-  clear: both;
+  pointer-events: none;
 }
 
 .section-service .service-item {
-  float: left;
-}
-
-.section-service .service-item+.service-item {
-  margin-left: 16px;
+  position: relative;
 }
 
 .section-service .link-service {
   position: relative;
   z-index: 1;
-  display: block;
-  padding: 6px 10px 7px 45px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -419,11 +407,9 @@
   color: #00002e;
 }
 
-.section-service .link-service::after {
+.section-service .link-service::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: -1;
   width: 35px;
   height: 35px;
@@ -431,50 +417,57 @@
   transition: width 300ms ease-in-out;
 }
 
-.section-service .link-service:hover::after {
-  width: 100%;
+.section-service .service-item.chart .link-service::before {
+  background-image: linear-gradient(135deg, #d1f7ff 16%, #addffe 100%);
 }
 
-.section-service .link-service::before {
+.section-service .service-item.apply .link-service::before {
+  background-image: linear-gradient(135deg, #d1f7ff 16%, #addffe 100%);
+}
+
+.section-service .service-item.compliment .link-service::before {
+  background-image: linear-gradient(135deg, #c0ebfc 16%, #c8f1fe 100%);
+}
+
+.section-service .service-item.passport .link-service::before {
+  background-image: linear-gradient(135deg, #a7d9f8 16%, #c8f1fe 100%);
+}
+
+.section-service .link-service:hover::before {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.section-service .ico-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+
+.section-service .ico-service::before {
   content: '';
-  position: absolute;
-  top: calc(50% - 12px);
-  left: 7px;
+  display: block;
   width: 22px;
   height: 23px;
   background: url("../images/main/service_icons.png") no-repeat;
 }
 
-.section-service .service-item.chart .link-service::before {
+.section-service .service-item.chart .ico-service::before {
   background-position: left center;
 }
 
-.section-service .service-item.chart .link-service::after {
-  background-image: linear-gradient(135deg, #d1f7ff 16%, #addffe 100%);
-}
-
-.section-service .service-item.apply .link-service::before {
+.section-service .service-item.apply .ico-service::before {
   background-position: -22px center;
 }
 
-.section-service .service-item.apply .link-service::after {
-  background-image: linear-gradient(135deg, #d1f7ff 16%, #addffe 100%);
-}
-
-.section-service .service-item.compliment .link-service::before {
+.section-service .service-item.compliment .ico-service::before {
   background-position: -44px center;
 }
 
-.section-service .service-item.compliment .link-service::after {
-  background-image: linear-gradient(135deg, #c0ebfc 16%, #c8f1fe 100%);
-}
-
-.section-service .service-item.passport .link-service::before {
+.section-service .service-item.passport .ico-service::before {
   background-position: -66px center;
-}
-
-.section-service .service-item.passport .link-service::after {
-  background-image: linear-gradient(135deg, #a7d9f8 16%, #c8f1fe 100%);
 }
 
 /* media query */
