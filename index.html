@@ -14,9 +14,16 @@
   <link rel="apple-touch-icon" href="./favicon_200x200.png" />
   <!-- Slick -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/layout.css" />
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/main.js"></script>
 </head>
 
 <body>
@@ -1088,32 +1095,30 @@
         </div>
         <section class="section-talk">
           <div class="common-inner">
-            <div class="content">
-              <h2 class="title">
-                <a href="#">
-                  <img src="./assets/images/main/talk-logo.png" alt="" />
-                  <span class="blind">수원 새빛톡톡</span>
-                </a>
-              </h2>
-              <div class="talk-list-wrap">
-                <ul class="talk-list">
-                  <li class="talk-item meeting">
-                    <a href="#" class="link-talk">제안토론</a>
-                  </li>
-                  <li class="talk-item vote">
-                    <a href="#" class="link-talk">설문투표</a>
-                  </li>
-                  <li class="talk-item receipt">
-                    <a href="#" class="link-talk">신청접수</a>
-                  </li>
-                  <li class="talk-item service">
-                    <a href="#" class="link-talk">수원새빛돌봄</a>
-                  </li>
-                  <li class="talk-item budget">
-                    <a href="#" class="link-talk">주민참여예산제안</a>
-                  </li>
-                </ul>
-              </div>
+            <h2 class="title">
+              <a href="#">
+                <img src="./assets/images/main/talk-logo.png" alt="" />
+                <span class="blind">수원 새빛톡톡</span>
+              </a>
+            </h2>
+            <div class="talk-list-wrap swiper">
+              <ul class="talk-list swiper-wrapper">
+                <li class="talk-item meeting swiper-slide">
+                  <a href="#" class="link-talk">제안토론</a>
+                </li>
+                <li class="talk-item vote swiper-slide">
+                  <a href="#" class="link-talk">설문투표</a>
+                </li>
+                <li class="talk-item receipt swiper-slide">
+                  <a href="#" class="link-talk">신청접수</a>
+                </li>
+                <li class="talk-item service swiper-slide">
+                  <a href="#" class="link-talk">수원새빛돌봄</a>
+                </li>
+                <li class="talk-item budget swiper-slide">
+                  <a href="#" class="link-talk">주민참여예산제안</a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -3808,10 +3813,6 @@
       </div>
     </footer>
   </div>
-  <!-- JS -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

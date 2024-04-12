@@ -61,7 +61,7 @@ $('.header .btn-zoom.out').on('click', function() {
     'transform': `scale(${zoomValue})`,
     'transformOrigin': 'left top'
   });
-  
+
   if(zoomValue === 1) {
     bodyEl.removeAttr('style');
   }
@@ -123,63 +123,24 @@ $('.section-visual .btn-control').on('click', function () {
   }
 });
 
-$('.section-talk .talk-list').slick({
-  slidesToShow: 5,
-  infinite: false,
-  arrows: false,
-  swipe: false,
-  draggable: false,
-  variableWidth: false,
-  responsive: [{
-      breakpoint: 1001,
-      settings: {
-        swipe: true,
-        draggable: true,
-        variableWidth: true,
-        swipeToSlide: true
-      }
+// talk
+const talkSwiper = new Swiper('.section-talk .swiper', {
+  slidesPerView: 5,
+  breakpoints: {
+    391: {
+      slidesPerView: 2
     },
-    {
-      breakpoint: 641,
-      settings: {
-        swipe: true,
-        draggable: true,
-        variableWidth: true,
-        swipeToSlide: true
-      }
+    491: {
+      slidesPerView: 3
     },
-    {
-      breakpoint: 621,
-      settings: {
-        swipe: true,
-        draggable: true,
-        variableWidth: true,
-        swipeToSlide: true,
-        slidesToShow: 4
-      }
+    621: {
+      slidesPerView: 4
     },
-    {
-      breakpoint: 491,
-      settings: {
-        swipe: true,
-        draggable: true,
-        variableWidth: true,
-        swipeToSlide: true,
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 391,
-      settings: {
-        swipe: true,
-        draggable: true,
-        variableWidth: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
+    641: {
+      slidesPerView: 'auto'
     }
-  ]
-})
+  }
+});
 
 $('.section-shortcut .shortcut-list').slick({
   autoplay: false,

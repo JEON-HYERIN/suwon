@@ -476,27 +476,23 @@
     height: 400px;
   }
 }
+
+/* talk */
 .section-talk {
   position: relative;
   margin-top: 63px;
   background-color: #014099;
 }
 
-.section-talk .content {
-  padding-left: 258px;
-  padding-right: 62px;
+.section-talk .common-inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
-
-.section-talk .common-inner::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .section-talk .title {
-  position: absolute;
-  top: -28px;
-  left: 73px;
+  position: relative;
+  left: 6px;
+  margin-top: -100px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -511,10 +507,6 @@
   }
 }
 
-.section-talk .title a {
-  display: block;
-}
-
 .section-talk .title::before {
   display: inline-block;
   width: 122px;
@@ -522,8 +514,15 @@
   background: url("../images/main/talk-logo.png") no-repeat;
 }
 
+.section-talk .title a {
+  display: block;
+}
+
 .section-talk .talk-list-wrap {
-  padding: 31px 0 33px;
+  flex: 1;
+  max-width: 1200px;
+  margin: 0;
+  padding: 32px 0;
 }
 
 .section-talk .talk-list {
@@ -534,16 +533,6 @@
   .section-talk .talk-list {
     height: 23px;
   }
-
-  .section-talk .content {
-    /* padding: 22px 0 0 124px; */
-  }
-}
-
-.section-talk .talk-list::after {
-  content: '';
-  display: block;
-  clear: both;
 }
 
 .section-talk .talk-item {
@@ -557,15 +546,11 @@
   }
 }
 
-@media screen and (max-width: 640px) {
-  .section-talk .talk-item+.talk-item {
-    margin-left: 25px;
-  }
-}
-
 .section-talk .link-talk {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 7px;
   padding-bottom: 3px;
   text-align: left;
   font-size: 18px;
@@ -577,12 +562,10 @@
 
 .section-talk .link-talk::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 22px;
   height: 20px;
   background: url("../images/main/talk-icons.png") no-repeat;
-  margin-right: 7px;
-  vertical-align: -5px;
 }
 
 .section-talk .talk-item.meeting .link-talk::before {
@@ -622,8 +605,7 @@
 }
 
 .main-inner2 {
-  padding-bottom: 45px;
-  padding-top: 58px;
+  padding: 58px 0 45px;
 }
 
 .main-inner2 .row1 {
