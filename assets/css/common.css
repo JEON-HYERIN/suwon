@@ -36,20 +36,9 @@ input {
   margin: 0 auto;
 }
 
-.horizontal-section {}
-
-.horizontal-section::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.horizontal-section .column-left {
-  float: left;
-}
-
-.horizontal-section .column-right {
-  float: right;
+.horizontal-section {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header .service-item .link-login::before,

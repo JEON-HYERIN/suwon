@@ -155,6 +155,103 @@
   position: relative;
 }
 
+.section-visual .slide-control-area {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  display: flex;
+  column-gap: 10px;
+}
+
+.section-visual .slide-control {
+  display: flex;
+  align-items: center;
+  column-gap: 19px;
+  padding-left: 28px;
+  border-radius: 39px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.section-visual .page {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.section-visual .page span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: normal;
+  color: #0087cd;
+}
+
+.section-visual .page .current {
+  color: #05054c;
+}
+
+.section-visual .control-btns {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.section-visual .btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+}
+
+.section-visual .btn:not(.btn-control) {
+  border-radius: 50%;
+  transition: background-color 200ms ease-in-out;
+}
+
+.section-visual .btn:hover:not(.btn-control) {
+  background-color: #fff;
+}
+.section-visual .btn::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 17px;
+}
+
+.section-visual .btn-prev::before {
+  background-position: -15px -30px;
+}
+
+.section-visual .btn-control::before {
+  width: 15px;
+  background-position: -60px -30px;
+}
+
+.section-visual .btn-control.pause::before {
+  background-position: -90px -30px;
+}
+
+.section-visual .btn-next::before {
+  background-position: -45px -30px;
+}
+
+.section-visual .btn-more {
+  background-color: #cde9fd;
+}
+
+.section-visual .btn-more::before {
+  width: 12px;
+  height: 12px;
+  background-position: -195px -120px;
+}
+
+.section-visual .btn-more:hover::before {
+  background-position: -210px -120px;
+}
+
 .section-visual .slide-wrapper {
   border-radius: 25px;
   overflow: hidden;
@@ -165,133 +262,6 @@
 .section-visual .visual-slide a {
   position: relative;
   display: block;
-}
-
-.section-visual .slide-control-area {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1;
-}
-
-.section-visual .slide-control-area::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.section-visual .slide-control {
-  float: left;
-  border-radius: 39px;
-  background-color: rgba(255, 255, 255, 0.85);
-}
-
-.section-visual .slide-control::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.section-visual .page {
-  float: left;
-  padding: 8px 19px 0 20px;
-}
-
-.section-visual .page span {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: -0.04em;
-  color: #0087cd;
-  vertical-align: top;
-}
-
-.section-visual .page .current {
-  color: #05054c;
-}
-
-.section-visual .page .gap {
-  margin: 0 6px;
-}
-
-.section-visual .control-btns {
-  float: right;
-}
-
-.section-visual .control-btns::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.section-visual .btn {
-  float: left;
-  position: relative;
-  width: 39px;
-  height: 39px;
-}
-
-.section-visual .btn-prev::before {
-  content: '';
-  position: absolute;
-  top: 11px;
-  left: calc(50% - 5px);
-  width: 10px;
-  height: 17px;
-  background-position: -15px -30px;
-}
-
-.section-visual .btn-control {
-  margin: 0 8px;
-}
-
-.section-visual .btn-control::before {
-  content: '';
-  position: absolute;
-  top: 11px;
-  left: 12px;
-  width: 15px;
-  height: 17px;
-  background-position: -60px -30px;
-}
-
-.section-visual .btn-control.pause::before {
-  background-position: -90px -30px;
-}
-
-.section-visual .btn-next::before {
-  content: '';
-  position: absolute;
-  top: 11px;
-  left: calc(50% - 5px);
-  width: 10px;
-  height: 17px;
-  background-position: -45px -30px;
-}
-
-.section-visual .btn-more {
-  float: right;
-  position: relative;
-  width: 39px;
-  height: 39px;
-  margin-left: 10px;
-  border-radius: 39px;
-  background-color: #cde9fd;
-  transition: background-color 200ms ease-in-out;
-}
-
-.section-visual .btn-more:hover {
-  background-color: #fff;
-}
-
-.section-visual .btn-more::before {
-  content: '';
-  position: absolute;
-  top: calc(50% - 6px);
-  left: calc(50% - 6px);
-  width: 12px;
-  height: 12px;
-  background-position: -195px -120px;
 }
 
 .section-mayor {
@@ -728,7 +698,7 @@
   font-size: 17px;
   font-weight: 500;
   line-height: 26px;
-  letter-spacing: 0;
+  letter-spacing: normal;
   color: #5a5f6e;
 }
 .section-board .tab-item.is-active .btn-tab {
@@ -916,7 +886,7 @@
 .section-board .link-board .date {
   float: left;
   font-family: 'Montserrat', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;
-  letter-spacing: 0;
+  letter-spacing: normal;
 }
 .section-board .link-board .yearmonth {
   display: block;
@@ -2133,7 +2103,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0;
+  letter-spacing: normal;
   text-align: center;
   color: #7e8790;
 }
