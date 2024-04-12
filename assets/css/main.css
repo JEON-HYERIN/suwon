@@ -12,6 +12,7 @@
   pointer-events: none;
 }
 
+/* search */
 .section-search {
   position: relative;
   padding-top: 60px;
@@ -27,23 +28,18 @@
   background-repeat: no-repeat;
   background-position: right top;
   mask-image: linear-gradient(to top, black 28%, transparent 117%);
-  -webkit-mask-image: linear-gradient(to top, black 28%, transparent 117%);
   pointer-events: none;
 }
 .section-search .search-form {
   position: relative;
 }
 .section-search .search {
-  padding-right: 95px;
-}
-.section-search .search::after {
-  content: '';
-  display: block;
-  clear: both;
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
 }
 .section-search .search-input {
-  width: 100%;
-  margin: 0;
+  flex: 1;
   padding: 11px 30px;
   font-size: 20px;
   font-weight: 600;
@@ -62,9 +58,11 @@
   color: #929292;
 }
 .section-search .btn-search {
-  position: absolute;
-  top: 0;
-  right: 0;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -73,27 +71,21 @@
 }
 .section-search .btn-search::before {
   content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  display: block;
   width: 20px;
   height: 20px;
-  background-repeat: no-repeat;
   background-position: -30px top;
 }
 .section-search .keyword-area {
-  margin-top: 15px;
-}
-.section-search .keyword-area::after {
-  content: '';
-  display: block;
-  clear: both;
+  display: flex;
+  align-items: center;
+  column-gap: 27px;
+  margin: 15px 0 0 10px;
 }
 .section-search .keyword-area .title {
-  float: left;
-  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.04em;
@@ -101,27 +93,16 @@
 }
 .section-search .keyword-area .title::before {
   content: '';
-  display: inline-block;
+  position: relative;
+  top: 1px;
+  display: block;
   width: 16px;
   height: 17px;
-  margin-right: 7px;
-  vertical-align: -3px;
   background-position: left -150px;
 }
 .section-search .keyword-list {
-  float: left;
-  padding-left: 27px;
-}
-.section-search .keyword-list::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.section-search .keyword-item {
-  float: left;
-}
-.section-search .keyword-item + .keyword-item {
-  margin-left: 28px;
+  display: flex;
+  column-gap: 28px;
 }
 .section-search .link-keyword {
   display: block;

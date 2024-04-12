@@ -138,9 +138,6 @@ body {
 .header .service-item.lang {
   z-index: 3;
 }
-.header .lang.is-open .btn-lang::after {
-  background-position: -120px -42px;
-}
 .header .service-item .btn-lang { 
   display: flex;
   align-items: center;
@@ -162,6 +159,9 @@ body {
   height: 6px;
   margin-left: 23px;
   background-position: -95px -41px;
+}
+.header .lang.is-open .btn-lang::after {
+  transform: rotate(180deg);
 }
 .header .lang-list-wrap {
   position: absolute;
