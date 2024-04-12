@@ -791,13 +791,13 @@ body {
 .footer .link-logo {
   display: block;
 }
-.footer .group-corp {
+.footer .group-corporation {
   padding: 40px 0;
 }
-.footer .corp-list {
+.footer .corporation-list {
   display: flex;
 }
-.footer .corp-item + .corp-item::before {
+.footer .corporation-item + .corporation-item::before {
   content: '';
   display: inline-block;
   width: 1px;
@@ -806,15 +806,15 @@ body {
   vertical-align: -1px;
   background-color: #dedede;
 }
-.footer .link-corp {
+.footer .link-corporation {
   font-size: 15px;
   line-height: 24px;
   letter-spacing: -0.03em;
 }
-.footer .link-corp:hover {
+.footer .link-corporation:hover {
   text-decoration: underline;
 }
-.footer .link-corp.highlight {
+.footer .link-corporation.highlight {
   font-weight: 600;
   color: #014099;
 }

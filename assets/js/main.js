@@ -240,383 +240,72 @@ $('.section-event .event-list').slick({
   }]
 })
 
-$('.section-board .board[data-category="civicism"] .board-list').slick({
-  slidesToShow: 5,
-  prevArrow: $('.section-board .board[data-category="civicism"] .btn-prev'),
-  nextArrow: $('.section-board .board[data-category="civicism"] .btn-next'),
-  autoplay: false,
-  dots: false,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  variableWidth: true,
-  infinite: false,
-  pauseOnDotsHover: true,
-  swipe: false,
-  draggable: false,
-  responsive: [{
-      breakpoint: 1501,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 1201,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 1001,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 801,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 641,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 548,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    }
-  ]
+
+new Swiper('.section-board .board[data-category="civicism"] .swiper', {
+  navigation: {
+    prevEl: '.section-board .board[data-category="civicism"] .swiper-button-prev',
+    nextEl: '.section-board .board[data-category="civicism"] .swiper-button-next'
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  speed: 500,
+  observer: true,
+  observeParents: true,
 })
-$('.section-board .board[data-category="job"] .board-list').slick({
-  slidesToShow: 5,
-  prevArrow: $('.section-board .board[data-category="job"] .btn-prev'),
-  nextArrow: $('.section-board .board[data-category="job"] .btn-next'),
-  autoplay: false,
-  dots: false,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  variableWidth: true,
-  infinite: false,
-  pauseOnDotsHover: true,
-  swipe: false,
-  draggable: false,
-  responsive: [{
-      breakpoint: 1501,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 1201,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 1001,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 801,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 641,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 548,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    }
-  ]
+new Swiper('.section-board .board[data-category="job"] .swiper', {
+  navigation: {
+    prevEl: '.section-board .board[data-category="job"] .swiper-button-prev',
+    nextEl: '.section-board .board[data-category="job"] .swiper-button-next'
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  speed: 500,
+  observer: true,
+  observeParents: true,
 })
-$('.section-board .board[data-category="news"] .board-list').slick({
-  slidesToShow: 5,
-  prevArrow: $('.section-board .board[data-category="news"] .btn-prev'),
-  nextArrow: $('.section-board .board[data-category="news"] .btn-next'),
-  autoplay: false,
-  dots: false,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  variableWidth: true,
-  infinite: false,
-  pauseOnDotsHover: true,
-  swipe: false,
-  draggable: false,
-  responsive: [{
-      breakpoint: 1501,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 1201,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 1001,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 801,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 641,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 548,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    }
-  ]
+new Swiper('.section-board .board[data-category="news"] .swiper', {
+  navigation: {
+    prevEl: '.section-board .board[data-category="news"] .swiper-button-prev',
+    nextEl: '.section-board .board[data-category="news"] .swiper-button-next'
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  speed: 500,
+  observer: true,
+  observeParents: true,
 })
-$('.section-board .board[data-category="receipt"] .board-list').slick({
-  slidesToShow: 5,
-  prevArrow: $('.section-board .board[data-category="receipt"] .btn-prev'),
-  nextArrow: $('.section-board .board[data-category="receipt"] .btn-next'),
-  autoplay: false,
-  dots: false,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  variableWidth: true,
-  infinite: false,
-  pauseOnDotsHover: true,
-  swipe: false,
-  draggable: false,
-  responsive: [{
-      breakpoint: 1501,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 1201,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 1001,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 801,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 641,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 548,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    }
-  ]
+new Swiper('.section-board .board[data-category="receipt"] .swiper', {
+  navigation: {
+    prevEl: '.section-board .board[data-category="receipt"] .swiper-button-prev',
+    nextEl: '.section-board .board[data-category="receipt"] .swiper-button-next'
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  speed: 500,
+  observer: true,
+  observeParents: true,
 })
-$('.section-board .board[data-category="information"] .board-list').slick({
-  slidesToShow: 5,
-  prevArrow: $('.section-board .board[data-category="information"] .btn-prev'),
-  nextArrow: $('.section-board .board[data-category="information"] .btn-next'),
-  autoplay: false,
-  dots: false,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  variableWidth: true,
-  infinite: false,
-  pauseOnDotsHover: true,
-  swipe: false,
-  draggable: false,
-  responsive: [{
-      breakpoint: 1501,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 1201,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 1001,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 801,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 641,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 548,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    }
-  ]
+new Swiper('.section-board .board[data-category="information"] .swiper', {
+  navigation: {
+    prevEl: '.section-board .board[data-category="information"] .swiper-button-prev',
+    nextEl: '.section-board .board[data-category="information"] .swiper-button-next'
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  speed: 500,
+  observer: true,
+  observeParents: true,
 })
-$('.section-board .board[data-category="bulletin"] .board-list').slick({
-  slidesToShow: 5,
-  prevArrow: $('.section-board .board[data-category="bulletin"] .btn-prev'),
-  nextArrow: $('.section-board .board[data-category="bulletin"] .btn-next'),
-  autoplay: false,
-  dots: false,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  variableWidth: true,
-  infinite: false,
-  pauseOnDotsHover: true,
-  swipe: false,
-  draggable: false,
-  responsive: [{
-      breakpoint: 1501,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 1201,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 1001,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 801,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 641,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 548,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 1
-      }
-    }
-  ]
+new Swiper('.section-board .board[data-category="bulletin"] .swiper', {
+  navigation: {
+    prevEl: '.section-board .board[data-category="bulletin"] .swiper-button-prev',
+    nextEl: '.section-board .board[data-category="bulletin"] .swiper-button-next'
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  speed: 500,
+  observer: true,
+  observeParents: true,
 })
 
 $('.section-board .btn-tab').click(function () {
