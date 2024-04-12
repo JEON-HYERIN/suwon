@@ -87,7 +87,7 @@ input {
 .section-communication .link-blog .ico-arrow::before,
 .section-communication .link-sns .ico-arrow::before,
 .section-communication .ico-news::before,
-.section-communication .link-news .ico-play,
+.section-communication .link-news::before,
 .section-board .swiper-button-prev::before,
 .section-board .swiper-button-next::before,
 .section-board .link-more::before {
