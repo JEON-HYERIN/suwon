@@ -124,7 +124,7 @@ $('.section-visual .btn-control').on('click', function () {
 });
 
 // talk
-const talkSwiper = new Swiper('.section-talk .swiper', {
+new Swiper('.section-talk .swiper', {
   slidesPerView: 5,
   breakpoints: {
     391: {
@@ -142,6 +142,7 @@ const talkSwiper = new Swiper('.section-talk .swiper', {
   }
 });
 
+// shortcut
 new Swiper('.section-shortcut .swiper', {
   slidesPerView: 8,
   navigation: {
@@ -191,45 +192,50 @@ new Swiper('.section-shortcut .swiper', {
 //   ]
 // })
 
-$('.section-news .news-list').slick({
-  autoplay: false,
-  dots: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  variableWidth: false,
-  infinite: false,
-  arrows: false,
-  pauseOnDotsHover: true,
-  swipe: false,
-  draggable: false,
-  responsive: [{
-      breakpoint: 1001,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 641,
-      settings: {
-        swipe: true,
-        draggable: true,
-        swipeToSlide: true,
-        variableWidth: true,
-        slidesToShow: 2
-      }
-    }
-  ]
-})
+// news
+new Swiper('.section-news .swiper', {
+  slidesPerView: 3,
+  spaceBetween: 65,
+  observer: true,
+  observeParents: true,
+});
+// $('.section-news .news-list').slick({
+//   autoplay: false,
+//   dots: false,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   variableWidth: false,
+//   infinite: false,
+//   arrows: false,
+//   pauseOnDotsHover: true,
+//   swipe: false,
+//   draggable: false,
+//   responsive: [{
+//       breakpoint: 1001,
+//       settings: {
+//         swipe: true,
+//         draggable: true,
+//         swipeToSlide: true,
+//         slidesToShow: 2
+//       }
+//     },
+//     {
+//       breakpoint: 641,
+//       settings: {
+//         swipe: true,
+//         draggable: true,
+//         swipeToSlide: true,
+//         variableWidth: true,
+//         slidesToShow: 2
+//       }
+//     }
+//   ]
+// })
 
 $('.section-news .btn-tab').click(function () {
   const index = $(this).index();
 
-  $('.news-list').eq(index).addClass('is-visible').siblings().removeClass('is-visible');
   $(this).parent().addClass('is-active').siblings().removeClass('is-active');
-  $('.section-news .news-list').slick('setPosition');
 })
 
 $('.section-event .event-list').slick({
@@ -246,7 +252,6 @@ $('.section-event .event-list').slick({
     }
   }]
 })
-
 
 new Swiper('.section-board .board[data-category="civicism"] .swiper', {
   navigation: {
