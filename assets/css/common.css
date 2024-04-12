@@ -67,12 +67,12 @@ input {
   background-size: 120px 30px;
 }
 
-.header .gnb-item.info .link-lnb::after,
+.header .ico-info::before,
 .section-visual .visual-slide .btn-prev::before,
 .section-visual .visual-slide .btn-next::before {
   background-image: url("../images/common/common_menu_icons.png");
   background-repeat: no-repeat;
-  background-size: 740px 150px;
+  background-size: 762px 150px;
 }
 .section-search .btn-search::before,
 .section-search .keyword-area .title::before,
