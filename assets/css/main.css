@@ -328,7 +328,7 @@
   color: #109cda;
 }
 
-.section-mayor .description {
+.section-mayor .desc {
   margin-top: 8px;
   font-size: 14px;
   font-weight: 500;
@@ -863,7 +863,7 @@
 .section-board .link-board:hover .title {
   color: #014099;
 }
-.section-board .link-board .description {
+.section-board .link-board .desc {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -1703,7 +1703,7 @@
   letter-spacing: -0.03em;
   color: #339326;
 }
-.section-communication .link-blog .description {
+.section-communication .link-blog .desc {
   max-height: 52px;
   margin-top: 9px;
   display: -webkit-box;
