@@ -74,7 +74,7 @@ body {
   padding: 12px 0;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: normal;
   line-height: 26px;
   color: #5a5f6e;
 }
@@ -106,7 +106,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 26px;
-  letter-spacing: 0;
+  letter-spacing: normal;
   color: #333;
 }
 .header .service-item + .service-item::before {
@@ -225,7 +225,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: 0;
+  letter-spacing: normal;
   color: #5a5f6e;
 }
 .header .link-lang:hover {
@@ -400,7 +400,7 @@ body {
   padding-left: 16px;
   font-size: 15px;
   line-height: 26px;
-  letter-spacing: 0;
+  letter-spacing: normal;
   color: #5a5f6e;
   transition: color 250ms ease-in-out;
 }
@@ -705,7 +705,7 @@ body {
   display: block;
   font-size: 15px;
   line-height: 26px;
-  letter-spacing: 0;
+  letter-spacing: normal;
   color: #5a5f6e;
 }
 .footer .group-contact {
