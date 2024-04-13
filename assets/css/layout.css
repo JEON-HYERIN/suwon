@@ -42,7 +42,7 @@ body {
   position: absolute;
   top: 73px;
   left: 0;
-  z-index: 3;
+  z-index: 4;
 }
 .header .logo a::before {
   content: '';
@@ -130,7 +130,7 @@ body {
   height: 19px;
 }
 .header .service-item.lang {
-  z-index: 3;
+  z-index: 4;
 }
 .header .service-item .btn-lang { 
   display: flex;
@@ -289,7 +289,7 @@ body {
 }
 .header .nav-container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   height: 100px;
   overflow: hidden;
   background-color: #fff;
