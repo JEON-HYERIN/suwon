@@ -82,6 +82,24 @@ $('.header .btn-lang').on('click', function() {
   }
 });
 
+$('.header .lang-item:first-child .link-lang').on('keydown', function(e) {
+  if(e.keyCode === 9 && e.shiftKey) {
+    closeLangList();
+  }
+});
+
+$('.header .lang-item:last-child .link-lang').on('keydown', function(e) {
+  if(e.keyCode === 9 && !e.shiftKey) {
+    closeLangList();
+  }
+});
+
+function closeLangList() {
+  $('.header .service-item.lang').removeClass('is-open');
+  $('.lang-list').stop().slideUp();
+  $('.header .btn-lang').attr('aria-label', '언어선택 열기');
+}
+
 // zoom btn
 let zoomValue = 1;
 $('.header .btn-zoom.in').on('click', function() {
