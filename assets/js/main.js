@@ -25,7 +25,7 @@ $('.btn-family').keydown(function(e) {
 });
 
 $('.header .lnb-item:first-child .link-lnb').on('keydown', function(e) {
-  navIndex = $(this).parent().parent().parent().parent().index();
+  navIndex =$(this).parents('.gnb-item').index();
 
   if(e.keyCode === 9 && e.shiftKey) {
     if(navIndex === 0) {
@@ -37,9 +37,9 @@ $('.header .lnb-item:first-child .link-lnb').on('keydown', function(e) {
 });
 
 $('.header .lnb-item:last-child .link-lnb').on('keydown', function(e) {
-  navIndex = $(this).parent().parent().parent().parent().index();
+  navIndex =$(this).parents('.gnb-item').index();
   const navTotal = $('.gnb-item').length;
-  
+
   if(e.keyCode === 9 && !e.shiftKey) {
     if((navIndex + 1) === navTotal) {
       closeNav();
