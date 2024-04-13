@@ -17,19 +17,6 @@
   position: relative;
   padding-top: 60px;
 }
-.section-search .decoration {
-  content: '';
-  position: absolute;
-  top: calc(60px + 87px);
-  right: calc(0px - ((100vw - 1500px) / 2) - 49px);
-  width: 1076px;
-  height: 349px;
-  background-image: url("../images/main/searchsection_deco.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  mask-image: linear-gradient(to top, black 28%, transparent 117%);
-  pointer-events: none;
-}
 .section-search .search-form {
   position: relative;
 }
@@ -115,6 +102,19 @@
 }
 .section-search .link-keyword:hover {
   color: #014099;
+}
+.section-search .decoration {
+  content: '';
+  position: absolute;
+  top: calc(60px + 87px);
+  right: calc(0px - ((100vw - 1500px) / 2) - 49px);
+  width: 1076px;
+  height: 349px;
+  background-image: url("../images/main/searchsection_deco.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  mask-image: linear-gradient(to top, black 28%, transparent 117%);
+  pointer-events: none;
 }
 
 @media screen and (min-width: 1001px) {
@@ -1081,7 +1081,7 @@
   row-gap: 14px;
 }
 
-.section-shortcut .link-shortcut .ico-shortcut {
+.section-shortcut .ico-shortcut {
   position: relative;
   width: 90px;
   height: 90px;
@@ -1096,7 +1096,7 @@
   box-shadow: rgba(0, 0, 0, 0.15) 18px 30px 45px;
 }
 
-.section-shortcut .link-shortcut .ico-shortcut::before {
+.section-shortcut .ico-shortcut::before {
   content: '';
   display: block;
   width: 48px;
@@ -1232,12 +1232,10 @@
 }
 
 .main-inner3 .row2 .horizontal .column-left {
-  float: left;
   width: 993px;
 }
 
 .main-inner3 .row2 .horizontal .column-right {
-  float: right;
   width: 320px;
 }
 
@@ -1661,16 +1659,12 @@
   color: #339326;
 }
 .section-communication .link-blog .desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   max-height: 52px;
   margin-top: 9px;
-  display: -webkit-box;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  white-space: normal;
-  word-wrap: break-word;
-  overflow: hidden;
-  word-break: keep-all;
   color: #7e8790;
   font-size: 16px;
   font-weight: 400;
@@ -1753,7 +1747,7 @@
   transform: translateY(-10px);
   box-shadow: rgba(0, 0, 0, 0.2) 18px 30px 40px;
 }
-.section-communication .link-sns .ico-sns {
+.section-communication .ico-sns {
   content: '';
   display: block;
   width: 26px;
@@ -1807,11 +1801,6 @@
   row-gap: 20px;
   width: 448px;
   margin: -117px 0 0 auto;
-}
-.section-communication .content::after {
-  content: '';
-  display: block;
-  clear: both;
 }
 .section-communication .news {
   position: relative;
