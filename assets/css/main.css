@@ -160,7 +160,7 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   column-gap: 10px;
 }
@@ -178,9 +178,6 @@
   display: flex;
   align-items: center;
   column-gap: 6px;
-}
-
-.section-visual .page span {
   font-size: 15px;
   font-weight: 500;
   line-height: 22px;
@@ -253,9 +250,8 @@
   background-position: -210px -120px;
 }
 
-.section-visual .slide-wrapper {
+.section-visual .swiper {
   border-radius: 25px;
-  overflow: hidden;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 18px 30px 50px;
 }
@@ -463,7 +459,7 @@
 
 /* media query */
 @media screen and (min-width: 1001px) {
-  .section-visual .slide-wrapper {
+  .section-visual .swiper {
     height: 400px;
   }
 }

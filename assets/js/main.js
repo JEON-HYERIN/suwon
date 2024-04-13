@@ -80,31 +80,40 @@ $('.footer .btn-related').unbind('click').bind('click', function () {
   }
 });
 
-const visualSlide = $('.section-visual .slide-wrapper');
-visualSlide.slick({
-  autoplay: true,
-  infinite: true,
-  prevArrow: $('.section-visual .btn-prev'),
-  nextArrow: $('.section-visual .btn-next'),
-  // dots: true,
-  // dotsClass: 'page',
-  // customPaging: function (slider, i) {
-
-  //   const currentPage = String((i + 1)).padStart(2, '0')
-  //   const totalPage = String(slider.slideCount).padStart(2,'0');
-
-  //   return  '<span class="current">'+ currentPage +'</span><span class="gap">-</span><span class="total">' + totalPage + '</span>';
-  // }
-})
-visualSlide.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-
-  const currentPage = String((currentSlide ? currentSlide : 0) + 1).padStart(2, '0')
-  const totalPage = String(slick.slideCount).padStart(2, '0');
-
-  // $('.section-visual .page').html("<span class='current'>"+currentPage+"</span><span> - " + "</span>" + "<span class='total'>" + totalPage +"</span>");
-
-  $('.section-visual .page .current').html(`<span class="blind">현재 페이지</span>${currentPage}`);
-  $('.section-visual .page .total').html(`<span class="blind">전체 페이지</span>${totalPage}`);
+// visual
+const visualSwiper = new Swiper('.section-visual .swiper', {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    prevEl: '.section-visual .btn-prev',
+    nextEl: '.section-visual .btn-next'
+  },
+  pagination: {
+    el: '.section-visual .page',
+    type: 'fraction',
+    formatFractionCurrent: function (number) {
+        return ('0' + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+        return ('0' + number).slice(-2);
+    },
+    renderFraction: function (currentClass, totalClass) {
+        return `
+        <span class="current">
+          <span class="blind">현재 페이지</span>
+          <span class=${currentClass}></span>
+        </span>
+        -
+        <span class="total">
+          <span class="blind">전체 페이지</span>
+          <span class=${totalClass}></span>
+        </span>
+        `;
+    }
+},
 });
 
 let slidePaused = false; //자동재생상태
@@ -112,13 +121,13 @@ $('.section-visual .btn-control').on('click', function () {
   // 정지상태라면
   if (slidePaused) {
     $('.btn-control').removeClass('pause');
-    visualSlide.slick('slickPlay');
     $('.btn-control .blind').text('정지');
+    visualSwiper.autoplay.start();
     slidePaused = false;
   } else {
     $('.btn-control').addClass('pause');
-    visualSlide.slick('slickPause');
     $('.btn-control .blind').text('재생');
+    visualSwiper.autoplay.stop();
     slidePaused = true;
   }
 });
