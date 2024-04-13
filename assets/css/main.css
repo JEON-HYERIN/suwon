@@ -1824,6 +1824,7 @@
   display: block;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 34px 46px;
 }
 .section-communication .link-news::before  {
   content: '';
@@ -1838,7 +1839,7 @@
 .section-communication .link-news .thumb-box {
   position: relative;
   height: 260px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 34px 46px;
+ 
 }
 .section-communication .link-news .thumb-box::before {
   content: '';
