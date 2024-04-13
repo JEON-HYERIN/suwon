@@ -44,24 +44,18 @@ body {
   left: 0;
   z-index: 3;
 }
-.header .logo a {
-  display: block;
-}
 .header .logo a::before {
   content: '';
-  display: inline-block;
+  display: block;
   width: 130px;
   height: 50px;
   background: url("../images/common/logo.png") no-repeat;
-  vertical-align: top;
 }
 .header .group-top {
   height: 50px;
   border-bottom: 1px solid #d9dfe2;
 }
-.header .group-top .common-inner {
-  display: flex;
-  justify-content: space-between;
+.header .group-top .horizontal {
   align-items: center;
 }
 .header .util-list {

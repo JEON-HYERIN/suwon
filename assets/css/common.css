@@ -36,7 +36,7 @@ input {
   margin: 0 auto;
 }
 
-.horizontal-section {
+.horizontal {
   display: flex;
   justify-content: space-between;
 }
