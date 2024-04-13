@@ -433,9 +433,6 @@
 }
 
 .section-service .ico-service {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 35px;
   height: 35px;
 }
@@ -1086,9 +1083,6 @@
 
 .section-shortcut .link-shortcut .ico-shortcut {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 90px;
   height: 90px;
   border-radius: 30px;
@@ -1582,9 +1576,6 @@
   top: 0;
   left: 0;
   z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 71px;
   height: 71px;
   border-radius: 23px 23px 23px 0;
@@ -1636,9 +1627,6 @@
   bottom: 11px;
   right: 11px;
   z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -1794,9 +1782,6 @@
   position: absolute;
   top: -6px;
   right: -5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1836,9 +1821,6 @@
   top: 0;
   left: -20px;
   z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 71px;
   height: 71px;
   border-radius: 23px 0 23px 23px;

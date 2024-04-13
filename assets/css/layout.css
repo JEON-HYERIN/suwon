@@ -451,9 +451,6 @@ body {
   text-align: center;
 }
 .header .gnb-item.info .ico-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 90px;
   height: 90px;
   margin-bottom: 11px;

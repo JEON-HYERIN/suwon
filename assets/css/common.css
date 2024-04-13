@@ -41,6 +41,13 @@ input {
   justify-content: space-between;
 }
 
+[class^="ico-"],
+[class*="ico-"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header .service-item .link-login::before,
 .header .service-item .btn-lang::before,
 .header .service-item .btn-lang::after,
