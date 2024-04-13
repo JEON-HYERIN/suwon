@@ -232,12 +232,6 @@ new Swiper('.section-news .swiper', {
 //   ]
 // })
 
-$('.section-news .btn-tab').click(function () {
-  const index = $(this).index();
-
-  $(this).parent().addClass('is-active').siblings().removeClass('is-active');
-})
-
 // event
 new Swiper('.section-event .swiper', {
   loop: true,
@@ -262,10 +256,10 @@ new Swiper('.section-event .swiper', {
 //   }]
 // })
 
-new Swiper('.section-board .board[data-category="civicism"] .swiper', {
+new Swiper('.section-board [data-category="civicism"] .swiper', {
   navigation: {
-    prevEl: '.section-board .board[data-category="civicism"] .swiper-button-prev',
-    nextEl: '.section-board .board[data-category="civicism"] .swiper-button-next'
+    prevEl: '.section-board [data-category="civicism"] .swiper-button-prev',
+    nextEl: '.section-board [data-category="civicism"] .swiper-button-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -273,10 +267,10 @@ new Swiper('.section-board .board[data-category="civicism"] .swiper', {
   observer: true,
   observeParents: true,
 })
-new Swiper('.section-board .board[data-category="job"] .swiper', {
+new Swiper('.section-board [data-category="job"] .swiper', {
   navigation: {
-    prevEl: '.section-board .board[data-category="job"] .swiper-button-prev',
-    nextEl: '.section-board .board[data-category="job"] .swiper-button-next'
+    prevEl: '.section-board [data-category="job"] .swiper-button-prev',
+    nextEl: '.section-board [data-category="job"] .swiper-button-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -284,10 +278,10 @@ new Swiper('.section-board .board[data-category="job"] .swiper', {
   observer: true,
   observeParents: true,
 })
-new Swiper('.section-board .board[data-category="news"] .swiper', {
+new Swiper('.section-board [data-category="news"] .swiper', {
   navigation: {
-    prevEl: '.section-board .board[data-category="news"] .swiper-button-prev',
-    nextEl: '.section-board .board[data-category="news"] .swiper-button-next'
+    prevEl: '.section-board [data-category="news"] .swiper-button-prev',
+    nextEl: '.section-board [data-category="news"] .swiper-button-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -295,10 +289,10 @@ new Swiper('.section-board .board[data-category="news"] .swiper', {
   observer: true,
   observeParents: true,
 })
-new Swiper('.section-board .board[data-category="receipt"] .swiper', {
+new Swiper('.section-board [data-category="receipt"] .swiper', {
   navigation: {
-    prevEl: '.section-board .board[data-category="receipt"] .swiper-button-prev',
-    nextEl: '.section-board .board[data-category="receipt"] .swiper-button-next'
+    prevEl: '.section-board [data-category="receipt"] .swiper-button-prev',
+    nextEl: '.section-board [data-category="receipt"] .swiper-button-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -306,10 +300,10 @@ new Swiper('.section-board .board[data-category="receipt"] .swiper', {
   observer: true,
   observeParents: true,
 })
-new Swiper('.section-board .board[data-category="information"] .swiper', {
+new Swiper('.section-board [data-category="information"] .swiper', {
   navigation: {
-    prevEl: '.section-board .board[data-category="information"] .swiper-button-prev',
-    nextEl: '.section-board .board[data-category="information"] .swiper-button-next'
+    prevEl: '.section-board [data-category="information"] .swiper-button-prev',
+    nextEl: '.section-board [data-category="information"] .swiper-button-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -317,10 +311,10 @@ new Swiper('.section-board .board[data-category="information"] .swiper', {
   observer: true,
   observeParents: true,
 })
-new Swiper('.section-board .board[data-category="bulletin"] .swiper', {
+new Swiper('.section-board [data-category="bulletin"] .swiper', {
   navigation: {
-    prevEl: '.section-board .board[data-category="bulletin"] .swiper-button-prev',
-    nextEl: '.section-board .board[data-category="bulletin"] .swiper-button-next'
+    prevEl: '.section-board [data-category="bulletin"] .swiper-button-prev',
+    nextEl: '.section-board [data-category="bulletin"] .swiper-button-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -329,27 +323,6 @@ new Swiper('.section-board .board[data-category="bulletin"] .swiper', {
   observeParents: true,
 })
 
-$('.section-board .btn-tab').click(function () {
-  const data = $(this).parent().data('tab');
-  const boardEls = document.querySelectorAll('.section-board .board');
-
+$('.section-board .tab-title button, .section-news .tab-title button').click(function () {
   $(this).parent().parent().addClass('is-active').siblings().removeClass('is-active');
-
-  // boardEls.forEach(function(el) {
-  //   // console.log(el.dataset.category);
-  //   if(el.dataset.category === data) {
-  //     el.classList.add('is-visible');
-  //   } else {
-  //     el.classList.remove('is-visible')
-  //   }
-  // })
-  // $('.section-board .board-container').find('.is-visible').slick('setPosition');
-  // console.log(target);
-  // const index = $(this).index();
-
-  // $('.section-board .board-list-wrap').eq(index).addClass('is-visible').siblings().removeClass('is-visible');
-  // $(this).addClass('is-active').siblings().removeClass('is-active');
-  // $('.section-board .board-list').slick('setPosition');
-
-  // console.log(data);
 })
