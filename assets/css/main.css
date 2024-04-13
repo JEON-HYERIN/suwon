@@ -1871,6 +1871,9 @@
   top: 0;
   left: -20px;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 71px;
   height: 71px;
   border-radius: 23px 0 23px 23px;
@@ -1879,9 +1882,7 @@
 }
 .section-communication .ico-news::before {
   content: '';
-  position: absolute;
-  top: calc(50% - 12px);
-  left: 16px;
+  display: block;
   width: 43px;
   height: 24px;
   background-position: -240px top;
