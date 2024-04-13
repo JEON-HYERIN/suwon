@@ -702,8 +702,7 @@
   height: 19px;
   background-color: #ccc;
 }
-.section-board .swiper-button-prev,
-.section-board .swiper-button-next {
+.section-board .btn {
   position: relative;
   top: auto;
   left: auto;
@@ -715,22 +714,21 @@
   height: 24px;
   margin-top: 0;
 }
-.section-board .swiper-button-prev::before,
-.section-board .swiper-button-next::before {
+.section-board .btn::before {
   content: '';
   width: 10px;
   height: 16px;
 }
-.section-board .swiper-button-prev::before {
+.section-board .btn-prev::before {
   background-position: -180px top;
 }
-.section-board .swiper-button-next::before {
+.section-board .btn-next::before {
   background-position: -210px top;
 }
-.section-board .swiper-button-prev:hover::before {
+.section-board .btn-prev:hover::before {
   background-position: -195px top;
 }
-.section-board .swiper-button-next:hover::before {
+.section-board .btn-next:hover::before {
   background-position: -225px top;
 }
 .section-board .link-more {
@@ -1022,8 +1020,7 @@
   padding: 0 89px;
 }
 
-.section-shortcut .swiper-button-prev,
-.section-shortcut .swiper-button-next {
+.section-shortcut .btn {
   position: absolute;
   top: 47px;
   width: 55px;
@@ -1033,16 +1030,8 @@
   box-shadow: rgba(0, 0, 0, 0.15) 10px 17px 35px;
 }
 
-.section-shortcut .swiper-button-prev {
-  left: 0;
-}
 
-.section-shortcut .swiper-button-next {
-  right: 0;
-}
-
-.section-shortcut .swiper-button-prev::before,
-.section-shortcut .swiper-button-next::before {
+.section-shortcut .btn::before {
   content: '';
   position: absolute;
   top: calc(50% - 10px);
@@ -1053,18 +1042,26 @@
   background-repeat: no-repeat;
 }
 
-.section-shortcut .swiper-button-prev::before {
+.section-shortcut .btn-prev {
+  left: 0;
+}
+
+.section-shortcut .btn-next {
+  right: 0;
+}
+
+.section-shortcut .btn-prev::before {
   background-position: -15px -90px;
 }
-.section-shortcut .swiper-button-next::before {
+.section-shortcut .btn-next::before {
   background-position: -60px -90px;
 }
 
-.section-shortcut .swiper-button-prev:hover::before {
+.section-shortcut .btn-prev:hover::before {
   background-position: -30px -90px;
 }
 
-.section-shortcut .swiper-button-next:hover::before {
+.section-shortcut .btn-next:hover::before {
   background-position: -75px -90px;
 }
 
@@ -1072,11 +1069,11 @@
   opacity: 1;
 }
 
-.section-shortcut .swiper-button-prev.swiper-button-disabled::before {
+.section-shortcut .btn-prev.swiper-button-disabled::before {
   background-position: left -90px;
 }
 
-.section-shortcut .swiper-button-next.swiper-button-disabled::before  {
+.section-shortcut .btn-next.swiper-button-disabled::before  {
   background-position: -45px -90px;
 }
 
@@ -1412,11 +1409,11 @@
   position: absolute;
   bottom: -2px;
   right: 16px;
+  z-index: 2;
   display: flex;
   column-gap: 5px;
 }
-.section-event .swiper-button-prev,
-.section-event .swiper-button-next {
+.section-event .btn {
   position: static;
   display: flex;
   justify-content: center;
@@ -1428,27 +1425,25 @@
   transition: background-color 200ms ease-in-out;
 }
 
-.section-event .swiper-button-prev:hover,
-.section-event .swiper-button-next:hover {
+.section-event .btn:hover {
   background-color: #109cda;
 }
-.section-event .swiper-button-prev::before,
-.section-event .swiper-button-next::before {
+.section-event .btn::before {
   content: '';
   display: block;
   width: 10px;
   height: 14px;
 }
-.section-event .swiper-button-prev::before {
+.section-event .btn-prev::before {
   background-position: -120px -90px;
 }
-.section-event .swiper-button-next::before {
+.section-event .btn-next::before {
   background-position: -165px -90px;
 }
-.section-event .swiper-button-prev:hover::before {
+.section-event .btn-prev:hover::before {
   background-position: -150px -90px;
 }
-.section-event .swiper-button-next:hover::before {
+.section-event .btn-next:hover::before {
   background-position: -195px -90px;
 }
 .section-event .event-list-wrap {

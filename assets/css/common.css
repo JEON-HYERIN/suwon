@@ -41,11 +41,6 @@ input {
   justify-content: space-between;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-}
-
 .header .service-item .link-login::before,
 .header .service-item .btn-lang::before,
 .header .service-item .btn-lang::after,
@@ -82,14 +77,14 @@ input {
 .section-visual .btn-next::before,
 .section-visual .btn-more::before,
 .section-news .link-more::before,
-.section-event .swiper-button-prev::before,
-.section-event .swiper-button-next::before,
+.section-event .btn-prev::before,
+.section-event .btn-next::before,
 .section-communication .link-blog .ico-arrow::before,
 .section-communication .link-sns .ico-arrow::before,
 .section-communication .ico-news::before,
 .section-communication .link-news::before,
-.section-board .swiper-button-prev::before,
-.section-board .swiper-button-next::before,
+.section-board .btn-prev::before,
+.section-board .btn-next::before,
 .section-board .link-more::before {
   background-image: url("../images/main/main_icons.png");
   background-repeat: no-repeat;

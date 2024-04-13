@@ -146,8 +146,8 @@ new Swiper('.section-talk .swiper', {
 new Swiper('.section-shortcut .swiper', {
   slidesPerView: 8,
   navigation: {
-    prevEl: '.section-shortcut .swiper-button-prev',
-    nextEl: '.section-shortcut .swiper-button-next'
+    prevEl: '.section-shortcut .btn-prev',
+    nextEl: '.section-shortcut .btn-next'
   }
 });
 // $('.section-shortcut .shortcut-list').slick({
@@ -236,8 +236,8 @@ new Swiper('.section-news .swiper', {
 new Swiper('.section-event .swiper', {
   loop: true,
   navigation: {
-    prevEl: '.section-event .swiper-button-prev',
-    nextEl: '.section-event .swiper-button-next',
+    prevEl: '.section-event .btn-prev',
+    nextEl: '.section-event .btn-next',
   }
 })
 
@@ -258,8 +258,8 @@ new Swiper('.section-event .swiper', {
 
 new Swiper('.section-board [data-category="civicism"] .swiper', {
   navigation: {
-    prevEl: '.section-board [data-category="civicism"] .swiper-button-prev',
-    nextEl: '.section-board [data-category="civicism"] .swiper-button-next'
+    prevEl: '.section-board [data-category="civicism"] .btn-prev',
+    nextEl: '.section-board [data-category="civicism"] .btn-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -269,8 +269,8 @@ new Swiper('.section-board [data-category="civicism"] .swiper', {
 })
 new Swiper('.section-board [data-category="job"] .swiper', {
   navigation: {
-    prevEl: '.section-board [data-category="job"] .swiper-button-prev',
-    nextEl: '.section-board [data-category="job"] .swiper-button-next'
+    prevEl: '.section-board [data-category="job"] .btn-prev',
+    nextEl: '.section-board [data-category="job"] .btn-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -280,8 +280,8 @@ new Swiper('.section-board [data-category="job"] .swiper', {
 })
 new Swiper('.section-board [data-category="news"] .swiper', {
   navigation: {
-    prevEl: '.section-board [data-category="news"] .swiper-button-prev',
-    nextEl: '.section-board [data-category="news"] .swiper-button-next'
+    prevEl: '.section-board [data-category="news"] .btn-prev',
+    nextEl: '.section-board [data-category="news"] .btn-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -291,8 +291,8 @@ new Swiper('.section-board [data-category="news"] .swiper', {
 })
 new Swiper('.section-board [data-category="receipt"] .swiper', {
   navigation: {
-    prevEl: '.section-board [data-category="receipt"] .swiper-button-prev',
-    nextEl: '.section-board [data-category="receipt"] .swiper-button-next'
+    prevEl: '.section-board [data-category="receipt"] .btn-prev',
+    nextEl: '.section-board [data-category="receipt"] .btn-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -302,8 +302,8 @@ new Swiper('.section-board [data-category="receipt"] .swiper', {
 })
 new Swiper('.section-board [data-category="information"] .swiper', {
   navigation: {
-    prevEl: '.section-board [data-category="information"] .swiper-button-prev',
-    nextEl: '.section-board [data-category="information"] .swiper-button-next'
+    prevEl: '.section-board [data-category="information"] .btn-prev',
+    nextEl: '.section-board [data-category="information"] .btn-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
@@ -313,8 +313,8 @@ new Swiper('.section-board [data-category="information"] .swiper', {
 })
 new Swiper('.section-board [data-category="bulletin"] .swiper', {
   navigation: {
-    prevEl: '.section-board [data-category="bulletin"] .swiper-button-prev',
-    nextEl: '.section-board [data-category="bulletin"] .swiper-button-next'
+    prevEl: '.section-board [data-category="bulletin"] .btn-prev',
+    nextEl: '.section-board [data-category="bulletin"] .btn-next'
   },
   slidesPerView: 'auto',
   spaceBetween: 20,
