@@ -16,13 +16,18 @@ $('.link-gnb').on('mouseenter focusin', function () {
   openNav(navIndex);
 })
 
-$('.lnb-list-wrap').on('mouseleave', closeNav);
+// 첫 번째 gnb 까지 shift + tab 키 누르면 네비게이션 닫히게 하기
+$('.link-gnb').on('keydown', function(e) {
+  navIndex = $(this).parent().index();
 
-$('.btn-family').keydown(function(e) {
-  if(e.keyCode === 9 && !e.shiftKey) {
-    $('.gnb-item:first-child .link-gnb').trigger('focusin');
+  if(e.keyCode === 9 && e.shiftKey) {
+    if(navIndex === 0) {
+      closeNav();
+    }
   }
-});
+})
+
+$('.lnb-list-wrap').on('mouseleave', closeNav);
 
 $('.header .lnb-item:first-child .link-lnb').on('keydown', function(e) {
   navIndex =$(this).parents('.gnb-item').index();
@@ -120,13 +125,13 @@ $('.footer .btn-related').unbind('click').bind('click', function () {
   }
 });
 
-$('.footer .site-item:first-child .link-site').keydown(function(e) {
+$('.footer .site-item:first-child .link-site').on('keydown', function(e) {
   if(e.keyCode === 9 && e.shiftKey) {
     $('.site-list-wrap').stop().slideUp();
   }
 });
 
-$('.footer .site-item:last-child .link-site').keydown(function(e) {
+$('.footer .site-item:last-child .link-site').on('keydown', function(e) {
   if(e.keyCode === 9 && !e.shiftKey) {
     $('.site-list-wrap').stop().slideUp();
   }
