@@ -823,6 +823,29 @@ body {
 }
 
 /* media query */
+@media screen and (max-width: 1000px) {
+  .header {
+    height: 70px;
+  }
+  .header .common-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .header .logo {
+    position: static;
+  }
+  .header .logo a::before {
+    width: 109px;
+    height: 42px;
+    background-size: 97%;
+  }
+  .header .group-top,
+  .header .group-nav {
+    display: none;
+  }
+}
 @media screen and (min-width: 1001px) {
   .header .nav-container.is-open {
     box-shadow: 8px 13px 15px 0 rgba(0, 51, 102, 0.1);

@@ -220,19 +220,21 @@ $('.section-visual .btn-control').on('click', function () {
 
 // talk
 new Swiper('.section-talk .swiper', {
-  slidesPerView: 5,
+  slidesPerView: 'auto',
+  spaceBetween: 25,
   breakpoints: {
-    391: {
-      slidesPerView: 2
-    },
-    491: {
-      slidesPerView: 3
-    },
-    621: {
-      slidesPerView: 4
-    },
+    // 391: {
+    //   slidesPerView: 2
+    // },
+    // 491: {
+    //   slidesPerView: 3
+    // },
+    // 621: {
+    //   slidesPerView: 4
+    // },
     641: {
-      slidesPerView: 'auto'
+      slidesPerView: 5,
+      spaceBetween: 25
     }
   }
 });
