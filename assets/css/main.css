@@ -575,8 +575,6 @@
 
 .main-inner2 .row1 {
   position: relative;
-  padding-top: 40px;
-  /* padding-left: calc((100% - 1500px) / 2); */
 }
 .main-inner2 .row1::before {
   content: '';
@@ -593,7 +591,7 @@
 /* board */
 .section-board {
   position: relative;
-  padding-top: 36px;
+  padding-top: 76px;
   padding-left: calc((100% - 1500px) / 2);
 }
 .section-board .headline {
@@ -678,7 +676,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1px;
-  height: 19px;
+  height: calc(100% - 5px);
   background-color: #ccc;
 }
 .section-board .btn {
@@ -751,6 +749,7 @@
 }
 .section-board .board-item {
   width: 315px;
+  margin-right: 20px;
 }
 .section-board .link-board {
   position: relative;
@@ -2033,6 +2032,7 @@
   background-position: -200px top;
 }
 
+
 @media screen and (max-width: 1000px) {
   .section-search {
     padding-top: 0;
@@ -2057,6 +2057,14 @@
 
   .section-talk .talk-item {
     width: auto;
+  }
+
+  .main-inner2 .row1::before {
+    width: 97%;
+  }
+
+  .section-board .board-list-wrap {
+    mask-image: none;
   }
 }
 
@@ -2268,5 +2276,141 @@
   }
   .section-talk .talk-item.budget .link-talk::before {
     background-position: -76px center;
+  }
+
+
+  .main-inner2 {
+    padding: 0;
+  }
+  .main-inner2 .row1 {
+
+  }
+  .main-inner2 .row1::before {
+    height: calc(100% + 72px);
+  }
+
+  .section-board {
+    padding-top: 52px;
+    padding-left: 3%;
+  }
+  .section-board .headline {
+    column-gap: 0;
+    height: 18px;
+    font-size: 20px;
+  }
+  .section-board .headline::before {
+    top: auto;
+    left: auto;
+    height: 18px;
+    background-size: auto 12px;
+  }
+  .section-board .tab-container {
+    height: 246px;
+    padding-left: 0;
+  }
+  .section-board .tab .tab-title {
+    left: 0;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .section-board .tab.is-active .tab-title {
+    font-size: 14px;
+  }
+  .section-board .content {
+    top: -34px;
+    right: 0;
+    width: calc(100% - 70px);
+  }
+  .section-board .slide-control-wrap {
+    column-gap: 11px;
+    width: calc(100% - 3vw);
+  }
+  .section-board .slide-control {
+    column-gap: 32px;
+  }
+  .section-board .btn {
+    width: 16px;
+    height: 19px;
+  }
+  .section-board .btn::before {
+    width: 8px;
+    height: 11px;
+  }
+  .section-board .btn-prev::before {
+    background-position: -180px -30px;
+  }
+  .section-board .btn-prev:hover::before {
+    background-position: -195px -30px;
+  }
+  .section-board .btn-next::before {
+    background-position: -210px -30px;
+  }
+  .section-board .btn-next:hover::before {
+    background-position: -225px -30px;
+  }
+  .section-board .link-more {
+    width: 32px;
+    height: 32px;
+    box-shadow: rgba(0, 0, 0, 0.15) 7px 12px 25px;
+  }
+  .section-board .link-more::before {
+    width: 12px;
+    height: 12px;
+    background-position: -150px -60px;
+  }
+  .section-board .tab:nth-child(1) .tab-title {
+    top: 28px;
+  }
+  .section-board .tab:nth-child(2) .tab-title {
+    top: calc(28px * 2);
+  }
+  .section-board .tab:nth-child(3) .tab-title {
+    top: calc(28px * 3);
+  }
+  .section-board .tab:nth-child(4) .tab-title {
+    top: calc(28px * 4);
+  }
+  .section-board .tab:nth-child(5) .tab-title {
+    top: calc(28px * 5);
+  }
+  .section-board .tab:nth-child(6) .tab-title {
+    top: calc(28px * 6);
+  }
+  .section-board .board-list-wrap {
+    padding-top: 17px;
+    padding-left: 12px;
+  }
+  .section-board .board-item {
+    width: 220px;
+    margin-right: 11px;
+  }
+  .section-board .link-board {
+    row-gap: 10px;
+    padding: 28px 31px 27px 32px;
+  }
+  .section-board .link-board .yearmonth {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .section-board .link-board .day {
+    font-size: 21px;
+    line-height: 23px;
+  }
+  .section-board .link-board .publisher {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .section-board .link-board .content-body {
+    row-gap: 9px;
+  }
+  .section-board .link-board .title {
+    font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+  }
+  .section-board .link-board .desc {
+    height: 32px;
+    font-size: 11px;
+    line-height: 16px;
   }
 }

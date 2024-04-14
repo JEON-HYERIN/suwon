@@ -359,7 +359,6 @@ new Swiper('.section-board [data-category="civicism"] .swiper', {
     nextEl: '.section-board [data-category="civicism"] .btn-next'
   },
   slidesPerView: 'auto',
-  spaceBetween: 20,
   speed: 500,
   observer: true,
   observeParents: true,
@@ -370,7 +369,6 @@ new Swiper('.section-board [data-category="job"] .swiper', {
     nextEl: '.section-board [data-category="job"] .btn-next'
   },
   slidesPerView: 'auto',
-  spaceBetween: 20,
   speed: 500,
   observer: true,
   observeParents: true,
@@ -381,7 +379,6 @@ new Swiper('.section-board [data-category="news"] .swiper', {
     nextEl: '.section-board [data-category="news"] .btn-next'
   },
   slidesPerView: 'auto',
-  spaceBetween: 20,
   speed: 500,
   observer: true,
   observeParents: true,
@@ -392,7 +389,6 @@ new Swiper('.section-board [data-category="receipt"] .swiper', {
     nextEl: '.section-board [data-category="receipt"] .btn-next'
   },
   slidesPerView: 'auto',
-  spaceBetween: 20,
   speed: 500,
   observer: true,
   observeParents: true,
@@ -403,7 +399,6 @@ new Swiper('.section-board [data-category="information"] .swiper', {
     nextEl: '.section-board [data-category="information"] .btn-next'
   },
   slidesPerView: 'auto',
-  spaceBetween: 20,
   speed: 500,
   observer: true,
   observeParents: true,
@@ -414,7 +409,6 @@ new Swiper('.section-board [data-category="bulletin"] .swiper', {
     nextEl: '.section-board [data-category="bulletin"] .btn-next'
   },
   slidesPerView: 'auto',
-  spaceBetween: 20,
   speed: 500,
   observer: true,
   observeParents: true,
