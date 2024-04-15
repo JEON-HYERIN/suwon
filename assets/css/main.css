@@ -480,18 +480,6 @@
   margin-top: -100px;
 }
 
-@media screen and (max-width: 1000px) {
-  .section-talk .headline {
-    left: 0;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .section-talk .headline {
-    width: 97px;
-  }
-}
-
 .section-talk .headline a::before {
   content: '';
   display: block;
@@ -2039,6 +2027,71 @@
   background-position: -200px top;
 }
 
+.quick-menu {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+}
+.quick-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10% 21px;
+  border-radius: 30px 30px 0 0;
+  background-color: #fff;
+  box-shadow: rgba(5, 5, 76, 0.2) 0 0 35px;
+}
+.quick-item {}
+.link-quick {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #333333;
+  letter-spacing: -0.04em;
+}
+.link-quick::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../images/main/quickmenubox_icons.png") no-repeat;
+}
+.quick-item.apply .link-quick::before {
+  background-position: left center;
+}
+.quick-item.welfare .link-quick::before {
+  background-position: right center;
+}
+.btn-quick {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  background-clip: padding-box;
+  background-image: linear-gradient(135deg, #109cda 0%, #014099 30%, #109cda 100%);
+  box-shadow: rgba(1, 64, 153, 0.35) 0 0 25px;
+}
+.btn-quick .title {
+  font-family: 'SCoreDream', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+
 
 @media screen and (max-width: 1000px) {
   .section-search {
@@ -2079,6 +2132,14 @@
     right: -36%;
     width: 120%;
     background-image: linear-gradient(150deg, #f0f5f9 0%, #fefeff 100%);
+  }
+  
+  .section-talk .headline {
+    left: 0;
+  }
+
+  .quick-menu {
+    display: block;
   }
 }
 
@@ -2305,13 +2366,10 @@
     background-position: -76px center;
   }
 
-
   .main-inner2 {
     padding: 0;
   }
-  .main-inner2 .row1 {
 
-  }
   .main-inner2 .row1::before {
     height: calc(100% + 72px);
   }
