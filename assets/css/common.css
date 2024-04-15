@@ -44,6 +44,9 @@ input {
   align-items: center;
 }
 
+.header .btn-nav::before,
+.header .btn-close-nav,
+.header .mobile-service .ico-weather,
 .header .service-item .link-login::before,
 .header .service-item .btn-lang::before,
 .header .service-item .btn-lang::after,
@@ -51,6 +54,7 @@ input {
 .header .service-item .btn-family::after,
 .header .link-sitemap::before,
 .header .link-site[target="_blank"]::after,
+.header .link-lnb::before,
 .footer .btn-related::after,
 .footer .link-contact.notify::before,
 .footer .link-contact.notify::after {
