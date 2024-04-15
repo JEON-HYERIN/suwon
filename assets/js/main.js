@@ -95,7 +95,14 @@ $('.btn-nav').on('click', function() {
   const windowWidth = $(window).width();
 
   if(windowWidth <= 1000) {
-    $('body').toggleClass('is-nav-open');
+    $('body').addClass('is-nav-open');
+  }
+});
+$('.btn-close-nav').on('click', function() {
+  const windowWidth = $(window).width();
+
+  if(windowWidth <= 1000) {
+    $('body').removeClass('is-nav-open');
   }
 });
 
