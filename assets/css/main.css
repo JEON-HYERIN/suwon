@@ -2741,6 +2741,7 @@
   .main-inner4 .horizontal .column-right {
     width: auto;
   }
+
   .section-communication .headline {
     column-gap: 3px;
     font-size: 21px;
@@ -2841,7 +2842,7 @@
     padding-left: 16px;
   }
   .section-communication .ico-news {
-    left: 0;
+    left: -16px;
     width: 50px;
     height: 50px;
     border-radius: 16px 0 16px 16px;
@@ -2879,5 +2880,64 @@
   .section-communication .news-area .date {
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .section-life {
+    padding-top: 22px;
+    margin-top: 57px;
+  }
+  .section-life .content-area::before {
+    border-radius: 12px 12px 23px 12px;
+    box-shadow: rgba(140, 140, 140, 0.2) 13px 22px 35px;
+  }
+  .section-life .content {
+    padding: 31px 17px 10px;
+    border-radius: 11px 11px 22px 11px;
+  }
+  .section-life .headline {
+    top: -23px;
+    right: -43px;
+    width: 220px;
+    padding: 0 42px 51px 15px;
+    background-size: contain;
+  }
+  .section-life .headline span {
+    padding: 14px 0 12px;
+    line-height: 18px;
+    font-size: 17px;
+  }
+  .section-life .life-list {
+    gap: 7px;
+  }
+  .section-life .btn-life {
+    height: 134px;
+    border-radius: 6px 6px 20px 6px;
+  }
+  .section-life .title::before {
+    width: 28px;
+    height: 32px;
+    background-size: 168px auto;
+  }
+  .section-life .btn-life .title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .section-life .life-item.cycle .title::before {
+    background-position: -28px top;
+  }
+  .section-life .life-item.health .title::before {
+    background-position: -56px top;
+  }
+  .section-life .life-item.traffic .title::before {
+    background-position: -84px top;
+  }
+  .section-life .life-item.job .title::before {
+    background-position: -112px top;
+  }
+  .section-life .life-item.environment .title::before {
+    background-position: -140px top;
+  }
+  .main-inner4 .decoration {
+    bottom: 475px;
   }
 }
