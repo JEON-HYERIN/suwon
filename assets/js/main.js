@@ -199,8 +199,26 @@ const visualSwiper = new Swiper('.section-visual .swiper', {
         </span>
         `;
     }
-},
+  },
+  on: {
+    slideChange: function() {
+      const realIndex = this.realIndex;
+      const slides = document.querySelectorAll('.section-visual .swiper-slide');
+
+      slides.forEach(function(slide, index) {
+        const anchor = slide.querySelector('a');
+        
+        if(index === realIndex) {
+          anchor.removeAttribute('tabindex');
+        } else {
+          anchor.setAttribute('tabindex', -1);
+        }
+      });
+    }
+  }
 });
+
+
 
 let slidePaused = false; //자동재생상태
 $('.section-visual .btn-control').on('click', function () {
