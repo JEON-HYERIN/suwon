@@ -1430,7 +1430,6 @@
 .section-event .event-list-wrap {
   position: relative;
   width: 100%;
-  height: 400px;
   border-radius: 15px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.2) 35px 61px 75px;
@@ -2629,11 +2628,21 @@
   }
 
   .main-inner3 .row2 .horizontal {
-    padding-top: 40px;
+    padding-top: 45px;
   }
 
   .main-inner3 .row2 .horizontal .column-left {
     width: auto;
+  }
+
+  .main-inner3 .row2 .horizontal .column-right {
+    width: 60%;
+    min-width: 225px;
+    margin: 0 auto;
+  }
+
+  .section-news {
+    padding-bottom: 80px;
   }
 
   .section-news .tab-title {
@@ -2680,5 +2689,48 @@
   }
   .section-news .link-more:hover::before {
     background-position: -120px -150px;
+  }
+
+  .section-event {
+    padding: 40px 0 17px;
+  }
+  .section-event .event-list-wrap {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 35px 35px 53px;
+  }
+  .section-event .slide-control {
+    right: 70px;
+    column-gap: 4px;
+  }
+  .section-event .btn {
+    width: 37px;
+    height: 37px;
+  }
+  .section-event .btn::before {
+    width: 7px;
+    height: 11px;
+  }
+  .section-event .btn-prev::before {
+    background-position: -120px -105px;
+  }
+  .section-event .btn-prev:hover::before {
+    background-position: -150px -105px;
+  }
+  .section-event .btn-next::before {
+    background-position: -165px -105px;
+  }
+  .section-event .btn-next:hover::before {
+    background-position: -195px -105px;
+  }
+  .section-event .link-event .thumb-box {
+    height: 0;
+    padding: 64% 0;
+  }
+  .section-event .link-event .thumb-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
   }
 }
