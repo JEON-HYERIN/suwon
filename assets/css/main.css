@@ -2737,6 +2737,9 @@
   .main-inner4 {
     padding: 0;
   }
+  .main-inner4 .horizontal {
+    padding-bottom: 61px;
+  }
   .main-inner4 .horizontal .column-left,
   .main-inner4 .horizontal .column-right {
     width: auto;
