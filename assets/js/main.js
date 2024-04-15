@@ -320,10 +320,20 @@ new Swiper('.section-shortcut .swiper', {
 
 // news
 new Swiper('.section-news .swiper', {
-  slidesPerView: 3,
-  spaceBetween: 65,
+  slidesPerView: 'auto',
+  spaceBetween: 40,
   observer: true,
   observeParents: true,
+  breakpoints: {
+    641: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1001: {
+      slidesPerView: 3,
+      spaceBetween: 65,
+    }
+  }
 });
 // $('.section-news .news-list').slick({
 //   autoplay: false,
