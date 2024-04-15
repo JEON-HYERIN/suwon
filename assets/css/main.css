@@ -87,6 +87,7 @@
 }
 .section-search .keyword-list {
   display: flex;
+  align-items: center;
   column-gap: 28px;
 }
 .section-search .link-keyword {
@@ -1004,8 +1005,7 @@
   display: block;
   width: 12px;
   height: 20px;
-  background-image: url(../images/main/main_icons.png);
-  background-repeat: no-repeat;
+  background: url("../images/main/main_icons.png") no-repeat;
 }
 
 .section-shortcut .btn-prev {
@@ -2107,6 +2107,18 @@
     display: none;
   }
 
+  .section-search .keyword-list {
+    column-gap: 19px;
+  }
+
+  .section-search .keyword-list::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 14px;
+    background: url("../images/main/main_icons.png") no-repeat -90px top;
+  }
+
   .main-inner1 .horizontal {
     padding-top: 15px;
   }
@@ -2140,6 +2152,65 @@
 
   .quick-menu {
     display: block;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1000px) {
+  .main-inner1 .horizontal .column-right {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .section-mayor {
+    width: 60%;
+  }
+  .section-mayor .content {
+    padding: 48px 20% 32px 6%;
+  }
+  .section-mayor .content::before {
+    right: -2%;
+    width: 38%;
+    height: 0;
+    padding: 20% 0;
+    background-size: contain;
+  }
+  .section-mayor::before {
+    left: 0;
+    width: 68px;
+    height: 0;
+    padding: 9% 0;
+    background-size: contain;
+  }
+  .section-mayor .organization {
+    font-size: 22px;
+  }
+  .section-mayor .name .highlight {
+    font-size: 32px;
+  }
+  .section-mayor .desc {
+    font-size: 13px;
+  }
+  .section-mayor .link-area {
+    column-gap: 6px;
+  }
+  .section-mayor .link-mayor {
+    min-width: 86px;
+    padding: 2px 14px;
+    font-size: 14px;
+  }
+  .section-service {
+    width: 36%;
+    margin-top: 0;
+  }
+  .section-service .service-list {
+    flex-direction: column;
+    row-gap: 14px;
+    padding: 32px 26px 24px 48px;
+  }
+  .section-service .service-list::before {
+    left: 0;
+    width: 100%;
+    background-size: contain;
   }
 }
 
