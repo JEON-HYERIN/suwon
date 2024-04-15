@@ -1001,6 +1001,9 @@
 .section-shortcut .btn {
   position: absolute;
   top: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -1008,12 +1011,9 @@
   box-shadow: rgba(0, 0, 0, 0.15) 10px 17px 35px;
 }
 
-
 .section-shortcut .btn::before {
   content: '';
-  position: absolute;
-  top: calc(50% - 10px);
-  left: calc(50% - 6px);
+  display: block;
   width: 12px;
   height: 20px;
   background-image: url(../images/main/main_icons.png);
@@ -1055,6 +1055,10 @@
   background-position: -45px -90px;
 }
 
+.section-shortcut .shortcut-list-wrap {
+  width: 100%;
+}
+
 .section-shortcut .link-shortcut {
   display: flex;
   flex-direction: column;
@@ -1088,7 +1092,7 @@
 }
 
 .section-shortcut .shortcut-item.chart .ico-shortcut::before {
-  background-position: -672px center;
+  background-position: left center;
 }
 
 .section-shortcut .shortcut-item.info .ico-shortcut::before {
@@ -2066,6 +2070,13 @@
   .section-board .board-list-wrap {
     mask-image: none;
   }
+
+  .main-inner3::before {
+    top: 0;
+    right: -36%;
+    width: 120%;
+    background-image: linear-gradient(150deg, #f0f5f9 0%, #fefeff 100%);
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -2494,6 +2505,122 @@
   .section-job .link-job .title {
     max-height: 40px;
     font-size: 14px;
+    line-height: 20px;
+  }
+
+  .main-inner3 {
+    padding-top: 14px;
+    padding-bottom: 49px;
+  }
+
+  .main-inner3::before {
+    height: calc(100% + 732px);
+  }
+
+  .section-shortcut .slide-area {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 20px;
+    padding: 0;
+  }
+  .section-shortcut .slide-control {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .section-shortcut .btn {
+    position: static;
+    width: 35px;
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.15) 7px 12px 25px;
+  }
+  .section-shortcut .btn::before {
+    width: 8px;
+    height: 13px;
+  }
+  .section-shortcut .btn-prev::before {
+    background-position: -15px -120px;
+  }
+  .section-shortcut .btn-prev:hover::before {
+    background-position: -30px -120px;
+  }
+  .section-shortcut .btn-prev.swiper-button-disabled::before {
+    background-position: left -120px;
+  }
+  .section-shortcut .btn-next::before {
+    background-position: -60px -120px;
+  }
+  .section-shortcut .btn-next:hover::before {
+    background-position: -75px -120px;
+  }
+  .section-shortcut .btn-next.swiper-button-disabled::before {
+    background-position: -45px -120px;
+  }
+  .section-shortcut .shortcut-list-wrap {
+    /* padding: 0 3%; */
+  }
+  .section-shortcut .link-shortcut {
+    row-gap: 10px;
+  }
+  .section-shortcut .ico-shortcut {
+    width: 63px;
+    height: 63px;
+    border-radius: 20px;
+  }
+  .section-shortcut .ico-shortcut::before {
+    width: 34px;
+    height: 34px;
+    background-size: 490px auto;
+   }
+   .section-shortcut .shortcut-item.chart .ico-shortcut::before {
+    background-position: 1px center;
+   }
+   .section-shortcut .shortcut-item.info .ico-shortcut::before {
+    background-position: -32px center;
+   }
+   .section-shortcut .shortcut-item.job .ico-shortcut::before {
+    background-position: -425px center;
+   }
+   .section-shortcut .shortcut-item.service .ico-shortcut::before {
+    background-position: -455px center;
+   }
+   .section-shortcut .shortcut-item.car .ico-shortcut::before {
+    background-position: -65px center;
+   }
+   .section-shortcut .shortcut-item.apply .ico-shortcut::before {
+    background-position: -98px center;
+   }
+   .section-shortcut .shortcut-item.compliment .ico-shortcut::before {
+    background-position: -162px center;
+   }
+   .section-shortcut .shortcut-item.reservation .ico-shortcut::before {
+    background-position: -228px center;
+   }
+   .section-shortcut .shortcut-item.statistic .ico-shortcut::before {
+    width: 33px;
+    background-position: -196px center;
+   }
+   .section-shortcut .shortcut-item.passport .ico-shortcut::before {
+    background-position: -261px center;
+   }
+   .section-shortcut .shortcut-item.sightseeing .ico-shortcut::before {
+    background-position: -293px center;
+   }
+   .section-shortcut .shortcut-item.enterprise .ico-shortcut::before {
+    background-position: -129px center;
+   }
+   .section-shortcut .shortcut-item.waste .ico-shortcut::before {
+    background-position: -326px center;
+   }
+   .section-shortcut .shortcut-item.tax .ico-shortcut::before {
+    background-position: -358px center;
+   }
+   .section-shortcut .shortcut-item.register .ico-shortcut::before {
+    background-position: -392px center;
+   }
+   .section-shortcut .link-shortcut .title {
+    padding: 0 2px 7px;
+    font-size: 13px;
     line-height: 20px;
   }
 }

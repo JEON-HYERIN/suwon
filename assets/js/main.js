@@ -259,10 +259,21 @@ new Swiper('.section-talk .swiper', {
 
 // shortcut
 new Swiper('.section-shortcut .swiper', {
-  slidesPerView: 8,
+  slidesPerView: 3,
   navigation: {
     prevEl: '.section-shortcut .btn-prev',
-    nextEl: '.section-shortcut .btn-next'
+    nextEl: '.section-shortcut .btn-next',
+  },
+  breakpoints: {
+    441: {
+      slidesPerView: 4
+    },
+    641: {
+      slidesPerView: 6
+    },
+    1001: {
+      slidesPerView: 8
+    }
   }
 });
 // $('.section-shortcut .shortcut-list').slick({
