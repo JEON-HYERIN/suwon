@@ -94,16 +94,12 @@ function closeNav() {
 $('.btn-nav').on('click', function() {
   const windowWidth = $(window).width();
 
-  if(windowWidth <= 1000) {
-    $('body').addClass('is-nav-open');
-  }
+  $('body').addClass('is-nav-open');
 });
 $('.btn-close-nav').on('click', function() {
   const windowWidth = $(window).width();
 
-  if(windowWidth <= 1000) {
-    $('body').removeClass('is-nav-open');
-  }
+  $('body').removeClass('is-nav-open');
 });
 
 $(window).on('resize', function() {
