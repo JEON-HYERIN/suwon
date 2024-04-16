@@ -1287,7 +1287,7 @@ header .link-lnb::before {
   }
 
   .header .nav-container {
-    height: calc(100% - 171px);
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     background-color: transparent;
