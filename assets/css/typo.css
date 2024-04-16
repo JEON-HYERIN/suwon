@@ -3,16 +3,19 @@
   font-weight: 400;
   src: url(../fonts/S-CoreDream-4Regular.woff2) format('woff2');
 }
+
 @font-face {
   font-family: 'SCoreDream';
   font-weight: 500;
   src: url(../fonts/S-CoreDream-5.woff2) format('woff2');
 }
+
 @font-face {
   font-family: 'SCoreDream';
   font-weight: 600;
   src: url(../fonts/S-CoreDream-6Bold.woff2) format('woff2');
 }
+
 @font-face {
   font-family: 'SCoreDream';
   font-weight: 700;
@@ -24,6 +27,7 @@
   font-weight: 400;
   src: url(../fonts/SpoqaHanSans-Regular.woff2) format('woff2');
 }
+
 @font-face {
   font-family: 'SpoqaHanSans';
   font-weight: 700;
@@ -35,6 +39,7 @@
   font-weight: 500;
   src: url(../fonts/Montserrat-Medium.woff) format('woff');
 }
+
 @font-face {
   font-family: 'Montserrat';
   font-weight: 700;

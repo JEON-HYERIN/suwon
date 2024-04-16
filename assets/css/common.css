@@ -26,6 +26,14 @@ input {
   clip: rect(0 0 0 0);
 }
 
+.common-display-mo {
+  display: none;
+}
+
+.common-display-pc {
+  display: block;
+}
+
 .common-inner {
   position: relative;
   width: 1500px;
@@ -103,15 +111,26 @@ input {
     width: 1200px;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .common-inner {
     width: 1000px;
   }
 }
+
 @media screen and (max-width: 1000px) {
+  .common-display-mo {
+    display: block;
+  }
+
+  .common-display-pc {
+    display: none;
+  }
+
   .common-inner {
     width: 94%;
   }
+
   .horizontal {
     flex-direction: column;
   }
