@@ -675,9 +675,6 @@ header .link-lnb::before {
   }
 }
 @media screen and (min-width: 1001px) {
-  .header .group-util .horizontal {
-    align-items: center;
-  }
   .header .gnb-item.info .lnb-list {
     row-gap: 33px;
     justify-content: center;
@@ -883,7 +880,46 @@ header .link-lnb::before {
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .header .group-util .horizontal {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .header .group-util .horizontal .column-right {
+    align-self: flex-end;
+  }
+  .header .group-util {
+    height: 90px;
+    padding-bottom: 8px;
+  }
+  .header .gnb-list {
+    column-gap: 40px;
+  }
+  .header .link-gnb {
+    font-size: 17px;
+  }
+  .header .lnb-item {
+    padding-left: 20px;
+  }
+  .header .link-lnb {
+    font-size: 16px;
+  }
+  .header .link-site {
+    font-size: 14px;
+  }
+
+  .footer .address-area {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1200px) {
+  .header .gnb-list {
+    column-gap: 22px;
+  }
+  .header .nav-container .inner1 {
+    column-gap: 40px;
+  }
   .footer .contact-area {
     gap: 10px 0;
   }
@@ -1207,9 +1243,6 @@ header .link-lnb::before {
   }
   .footer .link-corporation {
     font-size: 13px;
-  }
-  .footer .address-area {
-    flex-direction: column;
   }
 }
 

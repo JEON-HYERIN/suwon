@@ -254,10 +254,10 @@ function closeRelatedList(relatedIndex) {
 // visual
 const visualSwiper = new Swiper('.section-visual .swiper', {
   loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   navigation: {
     prevEl: '.section-visual .btn-prev',
     nextEl: '.section-visual .btn-next'
