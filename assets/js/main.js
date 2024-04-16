@@ -332,12 +332,13 @@ new Swiper('.section-talk .swiper', {
     // 491: {
     //   slidesPerView: 3
     // },
-    // 621: {
-    //   slidesPerView: 4
-    // },
     641: {
+      slidesPerView: 'auto',
+      spaceBetween: 22,
+    },
+    1001: {
       slidesPerView: 5,
-      spaceBetween: 25
+      spaceBetween: 'auto'
     }
   }
 });
