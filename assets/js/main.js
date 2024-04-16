@@ -259,6 +259,11 @@ function closeRelatedList(relatedIndex) {
   $('.related-item').eq(relatedIndex).removeClass('is-active');
 }
 
+$(window).on('resize', function() {
+  $('.footer .site-list-wrap').removeAttr('style');
+  $('.related-item').removeClass('is-active');
+});
+
 // visual
 const visualSwiper = new Swiper('.section-visual .swiper', {
   loop: true,

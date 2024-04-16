@@ -489,7 +489,6 @@ header .link-lnb::before {
 
 .footer .related-item {
   position: relative;
-  z-index: 2;
   width: 16.666%;
   transition: background-color 200ms ease-in-out;
 }
@@ -552,6 +551,7 @@ header .link-lnb::before {
   position: absolute;
   bottom: 65px;
   left: 0;
+  z-index: 4;
   width: 603px;
   border: 1px solid #d9dfe2;
   border-radius: 12px 12px 0 0;
