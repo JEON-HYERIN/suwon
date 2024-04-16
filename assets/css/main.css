@@ -2814,6 +2814,10 @@
     background-position: -60px -60px;
   }
 
+  .section-visual .btn-control.pause::before {
+    background-position: -90px -60px;
+  }
+
   .section-visual .btn-next::before {
     background-position: -30px -60px;
   }
