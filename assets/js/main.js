@@ -6,7 +6,7 @@ $(function () {
 })
 
 // navigation
-let gnbHeight = $('.header .nav-container .common-inner').outerHeight();
+const gnbHeight = $('.header .nav-container .common-inner').outerHeight();
 let lnbHeight = 0;
 let navIndex = 0;
 
@@ -15,7 +15,7 @@ desktopNav();
 function desktopNav() {
   const windowWidth = $(window).width();
 
-  $('.header .link-gnb').on('mouseenter focusin', function () {
+  $('.header .link-gnb').on('mouseenter focus', function () {
     if (windowWidth >= 1001) {
       navIndex = $(this).parent().index();
 
@@ -25,15 +25,10 @@ function desktopNav() {
     }
   })
 
-  // 첫 번째 gnb 까지 shift + tab 키 누르면 네비게이션 닫히게 하기
-  $('.header .link-gnb').on('keydown', function (e) {
+  $('.header .link-gnb:first-child').on('keydown', function (e) {
     if (windowWidth >= 1001) {
-      navIndex = $(this).parent().index();
-
-      if (e.keyCode === 9 && e.shiftKey) {
-        if (navIndex === 0) {
-          closeNav();
-        }
+      if (e.key === 'Tab' && e.shiftKey) {
+        closeNav(); 
       }
     } else {
       closeNav();
@@ -46,7 +41,7 @@ function desktopNav() {
     if (windowWidth >= 1001) {
       navIndex = $(this).parents('.gnb-item').index();
 
-      if (e.keyCode === 9 && e.shiftKey) {
+      if (e.key === 'Tab' && e.shiftKey) {
         if (navIndex === 0) {
           closeNav();
         } else {
@@ -63,7 +58,7 @@ function desktopNav() {
       navIndex = $(this).parents('.gnb-item').index();
       const navTotal = $('.header .gnb-item').length;
 
-      if (e.keyCode === 9 && !e.shiftKey) {
+      if (e.key === 'Tab' && !e.shiftKey) {
         if ((navIndex + 1) === navTotal) {
           closeNav();
         } else {
@@ -177,13 +172,13 @@ $('.header .btn-lang').on('click', function () {
 });
 
 $('.header .lang-item:first-child .link-lang').on('keydown', function (e) {
-  if (e.keyCode === 9 && e.shiftKey) {
+  if (e.key === 'Tab' && e.shiftKey) {
     closeLangList();
   }
 });
 
 $('.header .lang-item:last-child .link-lang').on('keydown', function (e) {
-  if (e.keyCode === 9 && !e.shiftKey) {
+  if (e.key === 'Tab' && !e.shiftKey) {
     closeLangList();
   }
 });
@@ -237,13 +232,13 @@ $('.footer .btn-related').unbind('click').bind('click', function () {
 });
 
 $('.footer .site-item:first-child .link-site').on('keydown', function (e) {
-  if (e.keyCode === 9 && e.shiftKey) {
+  if (e.key === 'Tab' && e.shiftKey) {
     closeRelatedList(relatedIndex);
   }
 });
 
 $('.footer .site-item:last-child .link-site').on('keydown', function (e) {
-  if (e.keyCode === 9 && !e.shiftKey) {
+  if (e.key === 'Tab' && !e.shiftKey) {
     closeRelatedList(relatedIndex);
   }
 });
