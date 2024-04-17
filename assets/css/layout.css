@@ -58,10 +58,6 @@ body.is-nav-open {
   background: url("../images/common/logo.png") no-repeat;
 }
 
-.header .btn-nav {
-  display: none;
-}
-
 .header .btn-nav::before {
   content: '';
   display: block;
@@ -1123,10 +1119,6 @@ header .link-lnb::before {
     background-size: 97%;
   }
 
-  .header .btn-nav {
-    display: block;
-  }
-
   .header .nav-panel {
     position: fixed;
     top: 0;
@@ -1261,10 +1253,6 @@ header .link-lnb::before {
 
   .header .util-list {
     flex-wrap: wrap;
-  }
-
-  .header .util-item.population {
-    display: none;
   }
 
   .header .link-util {

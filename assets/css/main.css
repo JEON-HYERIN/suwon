@@ -95,6 +95,7 @@
   column-gap: 7px;
   font-size: 16px;
   font-weight: 500;
+  line-height: 24px;
   letter-spacing: -0.04em;
   color: #109cda;
 }
@@ -2164,7 +2165,6 @@
 
 /* quick-menu */
 .quick-menu {
-  display: none;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -2399,10 +2399,6 @@
   .section-search .search-input {
     height: 70px;
   }
-
-  .section-search .keyword-area .title {
-    line-height: 24px;
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -2586,11 +2582,6 @@
   /* life */
   .section-life {
     margin-top: 30px;
-  }
-
-  /* quick menu */
-  .quick-menu {
-    display: block;
   }
 }
 
