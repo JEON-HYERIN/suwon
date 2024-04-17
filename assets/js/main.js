@@ -279,10 +279,10 @@ const visualSwiper = new Swiper('.section-visual .swiper', {
     el: '.section-visual .page',
     type: 'fraction',
     formatFractionCurrent: function (number) {
-      return ('0' + number).slice(-2);
+      return String(number).padStart(2, '0');
     },
     formatFractionTotal: function (number) {
-      return ('0' + number).slice(-2);
+      return String(number).padStart(2, '0');
     },
     renderFraction: function (currentClass, totalClass) {
       return `
