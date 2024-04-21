@@ -32,6 +32,10 @@
   padding-top: 60px;
 }
 
+.section-search .common-inner {
+  z-index: 1;
+}
+
 .section-search .search-form {
   position: relative;
 }
