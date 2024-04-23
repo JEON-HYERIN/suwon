@@ -374,6 +374,7 @@ new Swiper('.section-event .swiper', {
   }
 })
 
+// board
 new Swiper('.section-board [data-category="civicism"] .swiper', {
   navigation: {
     prevEl: '.section-board [data-category="civicism"] .btn-prev',
