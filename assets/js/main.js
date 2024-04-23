@@ -292,22 +292,6 @@ const visualSwiper = new Swiper('.section-visual .swiper', {
         </span>
       `;
     }
-  },
-  on: {
-    slideChange: function () {
-      const realIndex = this.realIndex;
-      const slides = document.querySelectorAll('.section-visual .swiper-slide');
-
-      slides.forEach(function (slide, index) {
-        const anchor = slide.querySelector('a');
-
-        if (index === realIndex) {
-          anchor.removeAttribute('tabindex');
-        } else {
-          anchor.setAttribute('tabindex', -1);
-        }
-      });
-    }
   }
 });
 
@@ -387,22 +371,6 @@ new Swiper('.section-event .swiper', {
   navigation: {
     prevEl: '.section-event .btn-prev',
     nextEl: '.section-event .btn-next',
-  },
-  on: {
-    slideChange: function () {
-      const realIndex = this.realIndex;
-      const slides = document.querySelectorAll('.section-event .swiper-slide');
-
-      slides.forEach(function (slide, index) {
-        const anchor = slide.querySelector('a');
-
-        if (index === realIndex) {
-          anchor.removeAttribute('tabindex');
-        } else {
-          anchor.setAttribute('tabindex', -1);
-        }
-      });
-    }
   }
 })
 
